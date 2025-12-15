@@ -86,9 +86,95 @@
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+
+  <!-- Language + WhatsApp Button Styles (NEW) -->
+  <style>
+    /* Language switch (top-right) */
+    .lang-switch {
+      position: fixed;
+      top: 85px;
+      right: 18px;
+      z-index: 9999;
+      display: flex;
+      gap: 8px;
+    }
+    .lang-switch button {
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 10px;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+      font-weight: 600;
+      cursor: pointer;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .lang-switch button.active {
+      background: #457efa;
+      color: #fff;
+    }
+
+    /* WhatsApp floating button */
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 9999;
+      width: 56px;
+      height: 56px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background: #25D366;
+      color: #fff;
+      box-shadow: 0 10px 28px rgba(0,0,0,.18);
+    }
+    .whatsapp-float i { font-size: 28px; }
+    .whatsapp-tooltip {
+      position: fixed;
+      right: 86px;
+      bottom: 26px;
+      z-index: 9999;
+      background: #111;
+      color: #fff;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 13px;
+      opacity: .92;
+      display: none;
+      max-width: 220px;
+    }
+    .whatsapp-float:hover + .whatsapp-tooltip { display: block; }
+
+    /* Simple language visibility helper */
+    [data-lang] { display: none; }
+    [data-lang].lang-show { display: block; }
+    /* Inline items */
+    .lang-inline[data-lang] { display: none; }
+    .lang-inline.lang-show { display: inline; }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
+
+  <!-- Language Switch (NEW) -->
+  <div class="lang-switch" aria-label="Language switch">
+    <button id="btnEN" type="button" class="active" title="English">🇬🇧 EN</button>
+    <button id="btnRO" type="button" title="Română">🇷🇴 RO</button>
+  </div>
+
+  <!-- WhatsApp Floating Button (NEW) -->
+  <a class="whatsapp-float"
+     href="https://wa.me/40772246337?text=Hello%20Marian%2C%20I%20saw%20your%20CV%20and%20I%27d%20like%20to%20talk."
+     target="_blank" rel="noopener"
+     aria-label="Contact Marian on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <div class="whatsapp-tooltip">Chat on WhatsApp</div>
 
   <!-- Navbar Start -->
   <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
@@ -100,18 +186,43 @@
     </button>
     <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
       <div class="navbar-nav m-auto py-0">
-        <a href="#home" class="nav-item nav-link active">Home</a>
-        <a href="#summary" class="nav-item nav-link">Summary</a>
-        <a href="#about" class="nav-item nav-link">About</a>
-        <a href="#skill" class="nav-item nav-link">Skill</a>
-        <a href="#qualification" class="nav-item nav-link">Quality</a>
-        <a href="#projects" class="nav-item nav-link">Projects</a>
-        <a href="#courses" class="nav-item nav-link">Completed courses</a>
-        <a href="#extra" class="nav-item nav-link">Extra</a>
+        <a href="#home" class="nav-item nav-link active">
+          <span class="lang-inline lang-show" data-lang="en">Home</span>
+          <span class="lang-inline" data-lang="ro">Acasă</span>
+        </a>
+        <a href="#summary" class="nav-item nav-link">
+          <span class="lang-inline lang-show" data-lang="en">Summary</span>
+          <span class="lang-inline" data-lang="ro">Rezumat</span>
+        </a>
+        <a href="#about" class="nav-item nav-link">
+          <span class="lang-inline lang-show" data-lang="en">About</span>
+          <span class="lang-inline" data-lang="ro">Despre</span>
+        </a>
+        <a href="#skill" class="nav-item nav-link">
+          <span class="lang-inline lang-show" data-lang="en">Skill</span>
+          <span class="lang-inline" data-lang="ro">Abilități</span>
+        </a>
+        <a href="#qualification" class="nav-item nav-link">
+          <span class="lang-inline lang-show" data-lang="en">Quality</span>
+          <span class="lang-inline" data-lang="ro">Educație</span>
+        </a>
+        <a href="#projects" class="nav-item nav-link">
+          <span class="lang-inline lang-show" data-lang="en">Projects</span>
+          <span class="lang-inline" data-lang="ro">Proiecte</span>
+        </a>
+        <a href="#courses" class="nav-item nav-link">
+          <span class="lang-inline lang-show" data-lang="en">Completed courses</span>
+          <span class="lang-inline" data-lang="ro">Cursuri finalizate</span>
+        </a>
+        <a href="#extra" class="nav-item nav-link">
+          <span class="lang-inline lang-show" data-lang="en">Extra</span>
+          <span class="lang-inline" data-lang="ro">Extra</span>
+        </a>
       </div>
       <a href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank" rel="noopener"
          class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color:#ffffff;">
-        Contact Me Here
+        <span class="lang-inline lang-show" data-lang="en">Contact Me Here</span>
+        <span class="lang-inline" data-lang="ro">Contactează-mă aici</span>
       </a>
     </div>
   </nav>
@@ -123,15 +234,29 @@
       <div class="row align-items-center">
 
         <div class="col-lg-6 text-center text-lg-left">
-          <h3 class="text-white font-weight-normal mb-3">Hello, I am</h3>
+          <h3 class="text-white font-weight-normal mb-3">
+            <span class="lang-inline lang-show" data-lang="en">Hello, I am</span>
+            <span class="lang-inline" data-lang="ro">Salut, eu sunt</span>
+          </h3>
+
           <h1 class="display-3 text-uppercase text-white mb-2">Marian Dumitru</h1>
 
           <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-          <div class="typed-text d-none">Frontend Developer, React Developer, TypeScript Developer</div>
+          <div class="typed-text d-none">
+            <span class="lang-inline lang-show" data-lang="en">Frontend Developer, React Developer, TypeScript Developer</span>
+            <span class="lang-inline" data-lang="ro">Frontend Developer, React Developer, TypeScript Developer</span>
+          </div>
 
-          <p class="text-white-50 mt-4" style="max-width: 520px;">
+          <!-- EN -->
+          <p class="text-white-50 mt-4 lang-show" data-lang="en" style="max-width: 520px;">
             I build modern, responsive web interfaces focused on usability, performance and maintainable code.
             I enjoy turning complex requirements into clean UI experiences.
+          </p>
+
+          <!-- RO -->
+          <p class="text-white-50 mt-4" data-lang="ro" style="max-width: 520px;">
+            Construiesc interfețe web moderne și responsive, cu focus pe utilizabilitate, performanță și cod ușor de întreținut.
+            Îmi place să transform cerințe complexe în experiențe UI clare și curate.
           </p>
 
           <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-4">
@@ -139,7 +264,8 @@
               LinkedIn
             </a>
             <a href="#projects" class="btn btn-outline-light">
-              View Projects
+              <span class="lang-inline lang-show" data-lang="en">View Projects</span>
+              <span class="lang-inline" data-lang="ro">Vezi Proiecte</span>
             </a>
           </div>
         </div>
@@ -160,16 +286,30 @@
     <div class="container">
       <div class="position-relative d-flex align-items-center justify-content-center">
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px  #dee2e6;">Summary</h1>
-        <h1 class="position-absolute text-uppercase text-primary">Professional Summary</h1>
+        <h1 class="position-absolute text-uppercase text-primary">
+          <span class="lang-inline lang-show" data-lang="en">Professional Summary</span>
+          <span class="lang-inline" data-lang="ro">Rezumat profesional</span>
+        </h1>
       </div>
 
       <div class="row align-items-center mt-4">
         <div class="col-lg-7">
-          <h3 class="mb-3">Frontend Developer (React • TypeScript)</h3>
-          <p class="mb-4">
+          <h3 class="mb-3">
+            <span class="lang-inline lang-show" data-lang="en">Frontend Developer (React • TypeScript)</span>
+            <span class="lang-inline" data-lang="ro">Frontend Developer (React • TypeScript)</span>
+          </h3>
+
+          <!-- EN -->
+          <p class="mb-4 lang-show" data-lang="en">
             Frontend developer focused on building clean, accessible and responsive interfaces.
             Comfortable working with component-based architecture, routing, state management and API integration.
             I enjoy improving UX and keeping codebases maintainable and scalable.
+          </p>
+          <!-- RO -->
+          <p class="mb-4" data-lang="ro">
+            Frontend developer orientat spre interfețe curate, accesibile și responsive.
+            Lucrez confortabil cu arhitectură pe componente, routing, management de stare și integrare API.
+            Îmi place să îmbunătățesc UX-ul și să păstrez proiectele ușor de întreținut și scalabile.
           </p>
 
           <div class="row">
@@ -177,35 +317,62 @@
               <div class="d-flex">
                 <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
                 <div>
-                  <h6 class="mb-1">UI & Performance</h6>
-                  <p class="mb-0 text-muted">Responsive layout, reusable components, clean UX.</p>
+                  <h6 class="mb-1">
+                    <span class="lang-inline lang-show" data-lang="en">UI & Performance</span>
+                    <span class="lang-inline" data-lang="ro">UI & Performanță</span>
+                  </h6>
+                  <p class="mb-0 text-muted">
+                    <span class="lang-inline lang-show" data-lang="en">Responsive layout, reusable components, clean UX.</span>
+                    <span class="lang-inline" data-lang="ro">Layout responsive, componente reutilizabile, UX curat.</span>
+                  </p>
                 </div>
               </div>
             </div>
+
             <div class="col-md-6 mb-3">
               <div class="d-flex">
                 <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
                 <div>
-                  <h6 class="mb-1">State & Data</h6>
-                  <p class="mb-0 text-muted">Redux Toolkit, Context, REST APIs, Axios/Fetch.</p>
+                  <h6 class="mb-1">
+                    <span class="lang-inline lang-show" data-lang="en">State & Data</span>
+                    <span class="lang-inline" data-lang="ro">Stare & Date</span>
+                  </h6>
+                  <p class="mb-0 text-muted">
+                    <span class="lang-inline lang-show" data-lang="en">Redux Toolkit, Context, REST APIs, Axios/Fetch.</span>
+                    <span class="lang-inline" data-lang="ro">Redux Toolkit, Context, API REST, Axios/Fetch.</span>
+                  </p>
                 </div>
               </div>
             </div>
+
             <div class="col-md-6 mb-3">
               <div class="d-flex">
                 <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
                 <div>
-                  <h6 class="mb-1">Routing & Structure</h6>
-                  <p class="mb-0 text-muted">React Router, scalable page structure.</p>
+                  <h6 class="mb-1">
+                    <span class="lang-inline lang-show" data-lang="en">Routing & Structure</span>
+                    <span class="lang-inline" data-lang="ro">Routing & Structură</span>
+                  </h6>
+                  <p class="mb-0 text-muted">
+                    <span class="lang-inline lang-show" data-lang="en">React Router, scalable page structure.</span>
+                    <span class="lang-inline" data-lang="ro">React Router, structură scalabilă a paginilor.</span>
+                  </p>
                 </div>
               </div>
             </div>
+
             <div class="col-md-6 mb-3">
               <div class="d-flex">
                 <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
                 <div>
-                  <h6 class="mb-1">Team Work</h6>
-                  <p class="mb-0 text-muted">Agile collaboration, Git, clean communication.</p>
+                  <h6 class="mb-1">
+                    <span class="lang-inline lang-show" data-lang="en">Team Work</span>
+                    <span class="lang-inline" data-lang="ro">Lucru în echipă</span>
+                  </h6>
+                  <p class="mb-0 text-muted">
+                    <span class="lang-inline lang-show" data-lang="en">Agile collaboration, Git, clean communication.</span>
+                    <span class="lang-inline" data-lang="ro">Colaborare Agile, Git, comunicare clară.</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -214,11 +381,30 @@
 
         <div class="col-lg-5">
           <div class="bg-light rounded p-4">
-            <h4 class="mb-3">Quick Facts</h4>
-            <p class="mb-2"><strong>Main stack:</strong> React, TypeScript, JavaScript</p>
-            <p class="mb-2"><strong>Tools:</strong> Git/GitHub, Chrome DevTools</p>
-            <p class="mb-2"><strong>Work:</strong> Remote / Hybrid / On-site</p>
-            <p class="mb-0"><strong>Location:</strong> Bucharest, Romania</p>
+            <h4 class="mb-3">
+              <span class="lang-inline lang-show" data-lang="en">Quick Facts</span>
+              <span class="lang-inline" data-lang="ro">Pe scurt</span>
+            </h4>
+            <p class="mb-2">
+              <strong><span class="lang-inline lang-show" data-lang="en">Main stack:</span><span class="lang-inline" data-lang="ro">Stack principal:</span></strong>
+              <span class="lang-inline lang-show" data-lang="en"> React, TypeScript, JavaScript</span>
+              <span class="lang-inline" data-lang="ro"> React, TypeScript, JavaScript</span>
+            </p>
+            <p class="mb-2">
+              <strong><span class="lang-inline lang-show" data-lang="en">Tools:</span><span class="lang-inline" data-lang="ro">Unelte:</span></strong>
+              <span class="lang-inline lang-show" data-lang="en"> Git/GitHub, Chrome DevTools</span>
+              <span class="lang-inline" data-lang="ro"> Git/GitHub, Chrome DevTools</span>
+            </p>
+            <p class="mb-2">
+              <strong><span class="lang-inline lang-show" data-lang="en">Work:</span><span class="lang-inline" data-lang="ro">Mod de lucru:</span></strong>
+              <span class="lang-inline lang-show" data-lang="en"> Remote / Hybrid / On-site</span>
+              <span class="lang-inline" data-lang="ro"> Remote / Hibrid / La birou</span>
+            </p>
+            <p class="mb-0">
+              <strong><span class="lang-inline lang-show" data-lang="en">Location:</span><span class="lang-inline" data-lang="ro">Locație:</span></strong>
+              <span class="lang-inline lang-show" data-lang="en"> Bucharest, Romania</span>
+              <span class="lang-inline" data-lang="ro"> București, România</span>
+            </p>
           </div>
         </div>
 
@@ -232,7 +418,10 @@
     <div class="container">
       <div class="position-relative d-flex align-items-center justify-content-center">
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px  #dee2e6;">About</h1>
-        <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+        <h1 class="position-absolute text-uppercase text-primary">
+          <span class="lang-inline lang-show" data-lang="en">About Me</span>
+          <span class="lang-inline" data-lang="ro">Despre mine</span>
+        </h1>
       </div>
       <div class="row align-items-center">
         <div class="col-lg-5 pb-4 pb-lg-0">
@@ -241,22 +430,36 @@
                alt="Marian Dumitru" />
         </div>
         <div class="col-lg-7">
-          <h3 class="mb-4">Frontend Developer</h3>
-          <p>
+          <h3 class="mb-4">
+            <span class="lang-inline lang-show" data-lang="en">Frontend Developer</span>
+            <span class="lang-inline" data-lang="ro">Frontend Developer</span>
+          </h3>
+
+          <!-- EN -->
+          <p class="lang-show" data-lang="en">
             I build modern web interfaces and focus on clarity, maintainability and a good user experience.
             I like structured work, clean UI, and I’m always improving my skills through hands-on projects.
           </p>
+          <!-- RO -->
+          <p data-lang="ro">
+            Construiesc interfețe web moderne și pun accent pe claritate, întreținere ușoară și o experiență bună pentru utilizator.
+            Îmi place lucrul structurat, UI curat și îmi îmbunătățesc constant abilitățile prin proiecte practice.
+          </p>
+
           <div class="row mb-3">
-            <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Marian Dumitru</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">27 February 1981</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor in Finance and Banking (ASE, Bucharest)</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary"><br>Connatix (2010–2022)<br>Fortech (Intern, 2019)</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+40-(0)752 130 020</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">thetechologyhub@gmail.com</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Bucharest, Sector 1</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Options for work: <span class="text-secondary">On-site/Remote/Hybrid</span></h6></div>
+            <div class="col-sm-6 py-2"><h6><span class="lang-inline lang-show" data-lang="en">Name:</span><span class="lang-inline" data-lang="ro">Nume:</span> <span class="text-secondary">Marian Dumitru</span></h6></div>
+            <div class="col-sm-6 py-2"><h6><span class="lang-inline lang-show" data-lang="en">Birthday:</span><span class="lang-inline" data-lang="ro">Data nașterii:</span> <span class="text-secondary">27 February 1981</span></h6></div>
+            <div class="col-sm-6 py-2"><h6><span class="lang-inline lang-show" data-lang="en">Degree:</span><span class="lang-inline" data-lang="ro">Studii:</span> <span class="text-secondary">Bachelor in Finance and Banking (ASE, Bucharest)</span></h6></div>
+            <div class="col-sm-6 py-2"><h6><span class="lang-inline lang-show" data-lang="en">Experience:</span><span class="lang-inline" data-lang="ro">Experiență:</span> <span class="text-secondary"><br>Connatix (2010–2022)<br>Fortech (Intern, 2019)</span></h6></div>
+            <div class="col-sm-6 py-2"><h6><span class="lang-inline lang-show" data-lang="en">Phone:</span><span class="lang-inline" data-lang="ro">Telefon:</span> <span class="text-secondary">+40-(0)752 130 020</span></h6></div>
+            <div class="col-sm-6 py-2"><h6><span class="lang-inline lang-show" data-lang="en">Email:</span><span class="lang-inline" data-lang="ro">Email:</span> <span class="text-secondary">thetechologyhub@gmail.com</span></h6></div>
+            <div class="col-sm-6 py-2"><h6><span class="lang-inline lang-show" data-lang="en">Address:</span><span class="lang-inline" data-lang="ro">Adresă:</span> <span class="text-secondary">Bucharest, Sector 1</span></h6></div>
+            <div class="col-sm-6 py-2"><h6><span class="lang-inline lang-show" data-lang="en">Options for work:</span><span class="lang-inline" data-lang="ro">Disponibilitate:</span> <span class="text-secondary">On-site/Remote/Hybrid</span></h6></div>
           </div>
-          <a href="#skill" class="btn btn-outline-primary">Learn More</a>
+          <a href="#skill" class="btn btn-outline-primary">
+            <span class="lang-inline lang-show" data-lang="en">Learn More</span>
+            <span class="lang-inline" data-lang="ro">Află mai mult</span>
+          </a>
         </div>
       </div>
     </div>
@@ -268,9 +471,13 @@
     <div class="container">
       <div class="position-relative d-flex align-items-center justify-content-center">
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-        <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+        <h1 class="position-absolute text-uppercase text-primary">
+          <span class="lang-inline lang-show" data-lang="en">My Skills</span>
+          <span class="lang-inline" data-lang="ro">Abilitățile mele</span>
+        </h1>
       </div>
       <div class="row align-items-center">
+        <!-- (Skills remain as you wrote - no content changes needed) -->
         <div class="col-md-6">
           <div class="skill mb-4">
             <div class="d-flex justify-content-between">
@@ -404,11 +611,18 @@
     <div class="container">
       <div class="position-relative d-flex align-items-center justify-content-center">
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-        <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+        <h1 class="position-absolute text-uppercase text-primary">
+          <span class="lang-inline lang-show" data-lang="en">Education & Expericence</span>
+          <span class="lang-inline" data-lang="ro">Educație & Experiență</span>
+        </h1>
       </div>
+
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <h3 class="mb-4">My Education</h3>
+          <h3 class="mb-4">
+            <span class="lang-inline lang-show" data-lang="en">My Education</span>
+            <span class="lang-inline" data-lang="ro">Educația mea</span>
+          </h3>
           <div class="border-left border-primary pt-2 pl-4 ml-2">
             <div class="position-relative mb-4">
               <i class="far fa-dot-circle text-primary position-absolute" style="top:2px; left:-35px; font-size:22px;"></i>
@@ -422,26 +636,43 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-6">
-          <h3 class="mb-4">My Expericence</h3>
+          <h3 class="mb-4">
+            <span class="lang-inline lang-show" data-lang="en">My Expericence</span>
+            <span class="lang-inline" data-lang="ro">Experiența mea</span>
+          </h3>
           <div class="border-left border-primary pt-2 pl-4 ml-2">
             <div class="position-relative mb-4">
               <i class="far fa-dot-circle text-primary position-absolute" style="top:2px; left:-35px; font-size:22px;"></i>
               <h5 class="font-weight-bold mb-1">Junior Web Developer</h5>
               <p class="mb-2"><strong>Connatix</strong> | <small>MARCH 2010 – MAY 2022</small></p>
-              <p>
+
+              <!-- EN -->
+              <p class="lang-show" data-lang="en">
                 Worked in Agile teams, structured tasks in YouTrack and collaborated via Slack.
                 Improved team communication and learned how large-scale projects are planned, built and maintained.
               </p>
+              <!-- RO -->
+              <p data-lang="ro">
+                Am lucrat în echipe Agile, am structurat task-uri în YouTrack și am colaborat în Slack.
+                Am îmbunătățit comunicarea în echipă și am înțeles cum sunt planificate, dezvoltate și întreținute proiectele la scară mare.
+              </p>
             </div>
+
             <div class="position-relative mb-4">
               <i class="far fa-dot-circle text-primary position-absolute" style="top:2px; left:-35px; font-size:22px;"></i>
               <h5 class="font-weight-bold mb-1">Junior Web Developer (Intern)</h5>
               <p class="mb-2"><strong>Fortech</strong> | <small>JULY 2019 – OCTOBER 2019</small></p>
-              <p>Internship focused on web development fundamentals and practical team workflows.</p>
+
+              <!-- EN -->
+              <p class="lang-show" data-lang="en">Internship focused on web development fundamentals and practical team workflows.</p>
+              <!-- RO -->
+              <p data-lang="ro">Stagiu axat pe bazele dezvoltării web și pe fluxuri de lucru practice în echipă.</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -452,7 +683,10 @@
     <div class="container">
       <div class="mb-5 position-relative d-flex align-items-center justify-content-center">
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-        <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
+        <h1 class="position-absolute text-uppercase text-primary">
+          <span class="lang-inline lang-show" data-lang="en">My Projects</span>
+          <span class="lang-inline" data-lang="ro">Proiectele mele</span>
+        </h1>
       </div>
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -465,19 +699,32 @@
         <div class="carousel-inner">
 
           <div class="carousel-item active">
-            <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">Best Projects</h1>
-            <div class="row pb-3">
+            <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">
+              <span class="lang-inline lang-show" data-lang="en">Best Projects</span>
+              <span class="lang-inline" data-lang="ro">Cele mai bune proiecte</span>
+            </h1>
 
+            <div class="row pb-3">
+              <!-- (Projects remain as you wrote - no changes to titles/links) -->
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
                 <div class="d-flex align-items-center justify-content-center mb-4">
                   <i class="fa fa-2x fas fa-futbol service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Ectmos</h4>
                 </div>
-                <p>
+
+                <p class="lang-show" data-lang="en">
                   Built with <b>MERN stack (MongoDB, Express.js, Node.js)</b> and Bootstrap UI.
                   A platform that connects people who want to play sports and need teammates.
                 </p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://ectmos.herokuapp.com/" target="_blank" rel="noopener">View Project</a>
+                <p data-lang="ro">
+                  Construit cu <b>MERN stack (MongoDB, Express.js, Node.js)</b> și Bootstrap UI.
+                  O platformă care conectează oamenii care vor să joace sport și au nevoie de coechipieri.
+                </p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://ectmos.herokuapp.com/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-3 col-md-5 text-center mb-5">
@@ -485,11 +732,20 @@
                   <i class="fas fa-2x fa-question service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Quiz</h4>
                 </div>
-                <p>
+
+                <p class="lang-show" data-lang="en">
                   React quiz app using <b>Axios</b> for fetching questions.
                   Built with reusable components and state logic using <b>useContext</b>.
                 </p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://interactive-quiz-game.netlify.app/" target="_blank" rel="noopener">View Project</a>
+                <p data-lang="ro">
+                  Aplicație quiz în React, folosind <b>Axios</b> pentru preluarea întrebărilor.
+                  Construită cu componente reutilizabile și logică de stare folosind <b>useContext</b>.
+                </p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://interactive-quiz-game.netlify.app/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
@@ -497,11 +753,20 @@
                   <i class="fas fa-2x fa-briefcase service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Jobster</h4>
                 </div>
-                <p>
+
+                <p class="lang-show" data-lang="en">
                   React app built with <b>Redux Toolkit</b> and <b>React Router 6</b>.
                   Includes authentication (CRUD features available after login).
                 </p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://jobster-best-jobs.netlify.app/landing" target="_blank" rel="noopener">View Project</a>
+                <p data-lang="ro">
+                  Aplicație React construită cu <b>Redux Toolkit</b> și <b>React Router 6</b>.
+                  Include autentificare (funcții CRUD disponibile după login).
+                </p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://jobster-best-jobs.netlify.app/landing" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
@@ -509,11 +774,20 @@
                   <i class="fab fa-react fa-2x service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">React Dashboard App</h4>
                 </div>
-                <p>
+
+                <p class="lang-show" data-lang="en">
                   Advanced React dashboard styled with <b>Tailwind</b>.
                   Built with Syncfusion components (drag & drop, filters, charts).
                 </p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://my-nicest-react-app.netlify.app/" target="_blank" rel="noopener">View Project</a>
+                <p data-lang="ro">
+                  Dashboard React avansat, stilizat cu <b>Tailwind</b>.
+                  Construit cu componente Syncfusion (drag & drop, filtre, grafice).
+                </p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://my-nicest-react-app.netlify.app/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-3 col-md-5 text-center mb-5">
@@ -521,8 +795,14 @@
                   <i class="fas fa-cocktail fa-2x service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Drinks Menu</h4>
                 </div>
-                <p>React app using <b>Axios</b> and <b>React Router 6</b> for navigation.</p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://the-cocktail-database.netlify.app/" target="_blank" rel="noopener">View Project</a>
+
+                <p class="lang-show" data-lang="en">React app using <b>Axios</b> and <b>React Router 6</b> for navigation.</p>
+                <p data-lang="ro">Aplicație React folosind <b>Axios</b> și <b>React Router 6</b> pentru navigare.</p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://the-cocktail-database.netlify.app/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
@@ -530,11 +810,20 @@
                   <i class="fab fa-imdb fa-3x service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Quest a movie</h4>
                 </div>
-                <p>
+
+                <p class="lang-show" data-lang="en">
                   React app that fetches data from IMDb API and uses <b>useContext</b>.
                   Includes search and multi-page navigation.
                 </p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://quest-a-movie.netlify.app/" target="_blank" rel="noopener">View Project</a>
+                <p data-lang="ro">
+                  Aplicație React care preia date din IMDb API și folosește <b>useContext</b>.
+                  Include căutare și navigare pe mai multe pagini.
+                </p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://quest-a-movie.netlify.app/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
             </div>
@@ -549,11 +838,20 @@
                   <i class="fa fa-2x fas fa-image service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Look for photos</h4>
                 </div>
-                <p>
+
+                <p class="lang-show" data-lang="en">
                   React app using Unsplash APIs (default feed + search).
                   Includes infinite scroll for a smooth UX.
                 </p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://look-for-photos.netlify.app/" target="_blank" rel="noopener">View Project</a>
+                <p data-lang="ro">
+                  Aplicație React folosind API-uri Unsplash (feed implicit + căutare).
+                  Include infinite scroll pentru o experiență fluidă.
+                </p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://look-for-photos.netlify.app/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-3 col-md-5 text-center mb-5">
@@ -561,8 +859,14 @@
                   <i class="fas fa-feather-alt fa-2x service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Kepper app</h4>
                 </div>
-                <p>A simple React app for taking notes and keeping ideas organized.</p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://kepper-take-notes.netlify.app/" target="_blank" rel="noopener">View Project</a>
+
+                <p class="lang-show" data-lang="en">A simple React app for taking notes and keeping ideas organized.</p>
+                <p data-lang="ro">O aplicație React simplă pentru notițe și organizarea ideilor.</p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://kepper-take-notes.netlify.app/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
@@ -570,11 +874,20 @@
                   <i class="fas fa-newspaper fa-2x service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">News feed</h4>
                 </div>
-                <p>
+
+                <p class="lang-show" data-lang="en">
                   React app using <b>React Router 6</b> and <b>useReducer</b>.
                   Implements features using <b>useContext</b>.
                 </p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://world-news-feed.netlify.app/" target="_blank" rel="noopener">View Project</a>
+                <p data-lang="ro">
+                  Aplicație React folosind <b>React Router 6</b> și <b>useReducer</b>.
+                  Implementează funcții folosind <b>useContext</b>.
+                </p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://world-news-feed.netlify.app/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
@@ -582,18 +895,31 @@
                   <i class="fas fa-2x fa-chart-area service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Shops</h4>
                 </div>
-                <p>
+
+                <p class="lang-show" data-lang="en">
                   React charts dashboard. Download charts in PNG/SVG/CSV, zoom, select timeframes.
                   Built with <b>Material UI</b>.
                 </p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://react-chart-page.netlify.app/" target="_blank" rel="noopener">View Project</a>
+                <p data-lang="ro">
+                  Dashboard cu grafice în React. Descărcare grafice în PNG/SVG/CSV, zoom, selecție intervale.
+                  Construit cu <b>Material UI</b>.
+                </p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://react-chart-page.netlify.app/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
             </div>
           </div>
 
           <div class="carousel-item">
-            <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">JavaScript & TypeScript</h1>
+            <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">
+              <span class="lang-inline lang-show" data-lang="en">JavaScript & TypeScript</span>
+              <span class="lang-inline" data-lang="ro">JavaScript & TypeScript</span>
+            </h1>
+
             <div class="row pb-3">
 
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
@@ -601,8 +927,14 @@
                   <i class="fa fa-2x fas fa-tasks service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Project Manager</h4>
                 </div>
-                <p>TypeScript project with drag & drop. Built with a class-based state system similar to React hooks.</p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/1/" target="_blank" rel="noopener">View Project</a>
+
+                <p class="lang-show" data-lang="en">TypeScript project with drag & drop. Built with a class-based state system similar to React hooks.</p>
+                <p data-lang="ro">Proiect TypeScript cu drag & drop. Construit cu un sistem de stare pe clase, similar cu React hooks.</p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/1/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-3 col-md-5 text-center mb-5">
@@ -610,8 +942,14 @@
                   <i class="fa-2x fas fa-infinity service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Grocery List</h4>
                 </div>
-                <p>Simple CRUD app built with vanilla JavaScript.</p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/2/" target="_blank" rel="noopener">View Project</a>
+
+                <p class="lang-show" data-lang="en">Simple CRUD app built with vanilla JavaScript.</p>
+                <p data-lang="ro">Aplicație CRUD simplă construită cu JavaScript vanilla.</p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/2/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
@@ -619,8 +957,14 @@
                   <i class="fa fa-2x fa-video service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Video Project</h4>
                 </div>
-                <p>JavaScript visual project with background video controls and preloader for slow connections.</p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/5/" target="_blank" rel="noopener">View Project</a>
+
+                <p class="lang-show" data-lang="en">JavaScript visual project with background video controls and preloader for slow connections.</p>
+                <p data-lang="ro">Proiect vizual în JavaScript cu control video pe fundal și preloader pentru conexiuni lente.</p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/5/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
               <div class="service-box col-lg-4 col-md-5 text-center mb-5">
@@ -628,8 +972,14 @@
                   <i class="fas fa-film fa-2x service-icon bg-primary text-white mr-3"></i>
                   <h4 class="font-weight-bold m-0">Netmovies</h4>
                 </div>
-                <p>Vanilla JS + HTML + CSS movie gallery with theme switch and navigation controls.</p>
-                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/6/" target="_blank" rel="noopener">View Project</a>
+
+                <p class="lang-show" data-lang="en">Vanilla JS + HTML + CSS movie gallery with theme switch and navigation controls.</p>
+                <p data-lang="ro">Galerie de filme în Vanilla JS + HTML + CSS, cu schimbare temă și controale de navigare.</p>
+
+                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/6/" target="_blank" rel="noopener">
+                  <span class="lang-inline lang-show" data-lang="en">View Project</span>
+                  <span class="lang-inline" data-lang="ro">Vezi proiectul</span>
+                </a>
               </div>
 
             </div>
@@ -655,81 +1005,127 @@
     <div class="container">
       <div class="position-relative d-flex align-items-center justify-content-center">
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Courses</h1>
-        <h1 class="position-absolute text-uppercase text-primary">Completed courses</h1>
+        <h1 class="position-absolute text-uppercase text-primary">
+          <span class="lang-inline lang-show" data-lang="en">Completed courses</span>
+          <span class="lang-inline" data-lang="ro">Cursuri finalizate</span>
+        </h1>
       </div>
+
       <div class="row justify-content-center">
         <div class="col-lg-9">
           <div class="owl-carousel testimonial-carousel">
-
+            <!-- Cursurile rămân cum le-ai pus; am tradus doar textul de descriere -->
             <div class="text-center">
               <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-              <h4 class="font-weight-light mb-4">
+
+              <h4 class="font-weight-light mb-4 lang-show" data-lang="en">
                 React 18 focused course with practical projects and modern patterns.
                 Emphasis on building real apps efficiently.
               </h4>
+              <h4 class="font-weight-light mb-4" data-lang="ro">
+                Curs axat pe React 18, cu proiecte practice și pattern-uri moderne.
+                Accent pe construirea eficientă a aplicațiilor reale.
+              </h4>
+
               <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/38711620_f4c5_3.jpg" style="width:80px; height:80px;" alt="Instructor" />
               <h5 class="font-weight-bold m-0">React Tutorial and Projects Course (2022)</h5>
               <p class="mb-2"><strong>By John Smilga</strong></p>
               <a href="https://www.udemy.com/course/react-tutorial-and-projects-course/" target="_blank" rel="noopener">
-                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+                <h5 class="text-secondary mb-1 pb-3">
+                  <span class="lang-inline lang-show" data-lang="en">View Course</span>
+                  <span class="lang-inline" data-lang="ro">Vezi cursul</span>
+                </h5>
               </a>
             </div>
 
             <div class="text-center">
               <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-              <h4 class="font-weight-light mb-4">
+
+              <h4 class="font-weight-light mb-4 lang-show" data-lang="en">
                 Comprehensive bootcamp covering modern web development with hands-on practice.
               </h4>
+              <h4 class="font-weight-light mb-4" data-lang="ro">
+                Bootcamp complet care acoperă dezvoltarea web modernă, cu practică hands-on.
+              </h4>
+
               <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/4466306_6fd8_3.jpg" style="width:80px; height:80px;" alt="Instructor" />
               <h5 class="font-weight-bold m-0">The Web Developer Bootcamp 2022</h5>
               <p class="mb-2"><strong>By Colt Steele</strong></p>
               <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" rel="noopener">
-                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+                <h5 class="text-secondary mb-1 pb-3">
+                  <span class="lang-inline lang-show" data-lang="en">View Course</span>
+                  <span class="lang-inline" data-lang="ro">Vezi cursul</span>
+                </h5>
               </a>
             </div>
 
             <div class="text-center">
               <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-              <h4 class="font-weight-light mb-4">
+
+              <h4 class="font-weight-light mb-4 lang-show" data-lang="en">
                 Accredited marketing fundamentals course with practical modules and real-world examples.
               </h4>
+              <h4 class="font-weight-light mb-4" data-lang="ro">
+                Curs acreditat de marketing, cu module practice și exemple din lumea reală.
+              </h4>
+
               <img class="img-fluid rounded-circle mx-auto mb-3" src="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg" style="width:80px; height:80px;" alt="Google" />
               <h5 class="font-weight-bold m-0">Fundamentals of digital marketing</h5>
               <p class="mb-2"><strong>By Google</strong> | <small>Code: QUB 7N4 9MD</small></p>
               <a href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code" target="_blank" rel="noopener">
-                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+                <h5 class="text-secondary mb-1 pb-3">
+                  <span class="lang-inline lang-show" data-lang="en">View Course</span>
+                  <span class="lang-inline" data-lang="ro">Vezi cursul</span>
+                </h5>
               </a>
             </div>
 
             <div class="text-center">
               <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-              <h4 class="font-weight-light mb-4">
+
+              <h4 class="font-weight-light mb-4 lang-show" data-lang="en">
                 Practical Git & GitHub course covering real workflows, branching, and collaboration.
               </h4>
+              <h4 class="font-weight-light mb-4" data-lang="ro">
+                Curs practic Git & GitHub care acoperă fluxuri reale, branching și colaborare.
+              </h4>
+
               <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/4466306_6fd8_3.jpg" style="width:80px; height:80px;" alt="Instructor" />
               <h5 class="font-weight-bold m-0">The Git & Github Bootcamp</h5>
               <p class="mb-2"><strong>By Colt Steele</strong></p>
               <a href="https://www.udemy.com/course/git-and-github-bootcamp/" target="_blank" rel="noopener">
-                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+                <h5 class="text-secondary mb-1 pb-3">
+                  <span class="lang-inline lang-show" data-lang="en">View Course</span>
+                  <span class="lang-inline" data-lang="ro">Vezi cursul</span>
+                </h5>
               </a>
             </div>
 
             <div class="text-center">
               <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-              <h4 class="font-weight-light mb-4">
+
+              <h4 class="font-weight-light mb-4 lang-show" data-lang="en">
                 Docker course with hands-on demos and clear explanation of concepts.
               </h4>
+              <h4 class="font-weight-light mb-4" data-lang="ro">
+                Curs Docker cu demonstrații practice și explicații clare ale conceptelor.
+              </h4>
+
               <img class="img-fluid rounded-circle mx-auto mb-3" src="https://yt3.ggpht.com/ytc/AKedOLQ-PgidQ0cYjiqG8YpXg_9DVvFrZnVduSC9vcx8pg=s88-c-k-c0x00ffffff-no-rj" style="width:80px; height:80px;" alt="Instructor" />
               <h5 class="font-weight-bold m-0">Docker Tutorial for Beginners</h5>
               <p class="mb-2"><strong>By TechWorld with Nana</strong></p>
               <a href="https://www.youtube.com/watch?v=3c-iBn73dDE" target="_blank" rel="noopener">
-                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+                <h5 class="text-secondary mb-1 pb-3">
+                  <span class="lang-inline lang-show" data-lang="en">View Course</span>
+                  <span class="lang-inline" data-lang="ro">Vezi cursul</span>
+                </h5>
               </a>
             </div>
 
           </div>
         </div>
       </div>
+
     </div>
   </div>
   <!-- Courses End -->
@@ -739,15 +1135,21 @@
     <div class="container">
       <div class="position-relative d-flex align-items-center justify-content-center">
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Extra</h1>
-        <h1 class="position-absolute text-uppercase text-primary">More about me</h1>
+        <h1 class="position-absolute text-uppercase text-primary">
+          <span class="lang-inline lang-show" data-lang="en">More about me</span>
+          <span class="lang-inline" data-lang="ro">Mai multe despre mine</span>
+        </h1>
       </div>
 
       <div class="row align-items-center mt-4">
         <div class="col-lg-6 mb-4 mb-lg-0">
           <div class="bg-light rounded p-4">
-            <h4 class="mb-3">Languages</h4>
-            <p class="mb-2"><strong>Romanian:</strong> Native</p>
-            <p class="mb-0"><strong>English:</strong> Professional working proficiency</p>
+            <h4 class="mb-3">
+              <span class="lang-inline lang-show" data-lang="en">Languages</span>
+              <span class="lang-inline" data-lang="ro">Limbi</span>
+            </h4>
+            <p class="mb-2"><strong>Romanian:</strong> <span class="lang-inline lang-show" data-lang="en">Native</span><span class="lang-inline" data-lang="ro">Nativ</span></p>
+            <p class="mb-0"><strong>English:</strong> <span class="lang-inline lang-show" data-lang="en">Professional working proficiency</span><span class="lang-inline" data-lang="ro">Nivel profesional</span></p>
 
             <hr />
 
@@ -765,20 +1167,44 @@
 
         <div class="col-lg-6">
           <div class="bg-light rounded p-4">
-            <h4 class="mb-3">What I’m looking for</h4>
+            <h4 class="mb-3">
+              <span class="lang-inline lang-show" data-lang="en">What I’m looking for</span>
+              <span class="lang-inline" data-lang="ro">Ce caut</span>
+            </h4>
             <ul class="mb-0">
-              <li>Frontend Developer role (React / TypeScript)</li>
-              <li>Projects focused on UI quality, performance and maintainable code</li>
-              <li>Team environment with clear process and learning opportunities</li>
+              <li>
+                <span class="lang-inline lang-show" data-lang="en">Frontend Developer role (React / TypeScript)</span>
+                <span class="lang-inline" data-lang="ro">Rol de Frontend Developer (React / TypeScript)</span>
+              </li>
+              <li>
+                <span class="lang-inline lang-show" data-lang="en">Projects focused on UI quality, performance and maintainable code</span>
+                <span class="lang-inline" data-lang="ro">Proiecte axate pe calitatea UI, performanță și cod ușor de întreținut</span>
+              </li>
+              <li>
+                <span class="lang-inline lang-show" data-lang="en">Team environment with clear process and learning opportunities</span>
+                <span class="lang-inline" data-lang="ro">Echipă cu proces clar și oportunități de învățare</span>
+              </li>
             </ul>
 
             <hr />
 
-            <h4 class="mb-3">Strengths</h4>
+            <h4 class="mb-3">
+              <span class="lang-inline lang-show" data-lang="en">Strengths</span>
+              <span class="lang-inline" data-lang="ro">Puncte forte</span>
+            </h4>
             <ul class="mb-0">
-              <li>Clean component structure & consistent UI</li>
-              <li>API integration with solid error/loading handling</li>
-              <li>Good communication and teamwork in Agile environments</li>
+              <li>
+                <span class="lang-inline lang-show" data-lang="en">Clean component structure & consistent UI</span>
+                <span class="lang-inline" data-lang="ro">Structură curată pe componente & UI consistent</span>
+              </li>
+              <li>
+                <span class="lang-inline lang-show" data-lang="en">API integration with solid error/loading handling</span>
+                <span class="lang-inline" data-lang="ro">Integrare API cu gestionare solidă pentru erori/încărcare</span>
+              </li>
+              <li>
+                <span class="lang-inline lang-show" data-lang="en">Good communication and teamwork in Agile environments</span>
+                <span class="lang-inline" data-lang="ro">Comunicare bună și lucru în echipă în medii Agile</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -830,5 +1256,45 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+
+  <!-- Language Switch Script (NEW) -->
+  <script>
+    (function () {
+      const btnEN = document.getElementById('btnEN');
+      const btnRO = document.getElementById('btnRO');
+
+      function setLang(lang) {
+        // toggle visible blocks
+        document.querySelectorAll('[data-lang]').forEach(el => {
+          const elLang = el.getAttribute('data-lang');
+          if (elLang === lang) el.classList.add('lang-show');
+          else el.classList.remove('lang-show');
+        });
+
+        // toggle buttons state
+        if (lang === 'en') {
+          btnEN.classList.add('active');
+          btnRO.classList.remove('active');
+          document.documentElement.lang = 'en';
+        } else {
+          btnRO.classList.add('active');
+          btnEN.classList.remove('active');
+          document.documentElement.lang = 'ro';
+        }
+
+        // persist
+        try { localStorage.setItem('site_lang', lang); } catch (e) {}
+      }
+
+      btnEN.addEventListener('click', () => setLang('en'));
+      btnRO.addEventListener('click', () => setLang('ro'));
+
+      // init from storage or default EN
+      let saved = 'en';
+      try { saved = localStorage.getItem('site_lang') || 'en'; } catch (e) {}
+      setLang(saved);
+    })();
+  </script>
+
 </body>
 </html>
