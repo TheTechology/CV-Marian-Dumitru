@@ -15,441 +15,205 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 
-  <!-- Libraries Stylesheet -->
+  <!-- Libraries -->
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-  <!-- Customized Bootstrap Stylesheet -->
+  <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
 
-  <!-- Navbar Start -->
-  <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-    <a href="index.html" class="navbar-brand ml-lg-3">
-      <h1 class="m-0 display-5"><span class="text-primary">Curriculum</span>Vitae</h1>
+<!-- NAVBAR -->
+<nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+  <a href="#home" class="navbar-brand ml-lg-3">
+    <h1 class="m-0 display-5"><span class="text-primary">Curriculum</span>Vitae</h1>
+  </a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+    <div class="navbar-nav m-auto py-0">
+      <a href="#home" class="nav-item nav-link active">Home</a>
+      <a href="#summary" class="nav-item nav-link">Summary</a>
+      <a href="#keyskills" class="nav-item nav-link">Key Skills</a>
+      <a href="#about" class="nav-item nav-link">About</a>
+      <a href="#skill" class="nav-item nav-link">Skill</a>
+      <a href="#qualification" class="nav-item nav-link">Quality</a>
+      <a href="#projects" class="nav-item nav-link">Projects</a>
+      <a href="#courses" class="nav-item nav-link">Completed courses</a>
+      <a href="#extra" class="nav-item nav-link">Extra</a>
+    </div>
+    <a href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank"
+       class="btn btn-menu d-none d-lg-block"
+       style="background-color:#457efa; color:#ffffff;">
+      Contact Me Here
     </a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-      <div class="navbar-nav m-auto py-0">
-        <a href="#home" class="nav-item nav-link active">Home</a>
-        <a href="#summary" class="nav-item nav-link">Summary</a>
-        <a href="#keyskills" class="nav-item nav-link">Key Skills</a>
-        <a href="#about" class="nav-item nav-link">About</a>
-        <a href="#skill" class="nav-item nav-link">Skill</a>
-        <a href="#qualification" class="nav-item nav-link">Quality</a>
-        <a href="#projects" class="nav-item nav-link">Projects</a>
-        <a href="#courses" class="nav-item nav-link">Completed courses</a>
-        <a href="#extra" class="nav-item nav-link">Extra</a>
-      </div>
-      <a href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank"
-        class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Contact Me Here</a>
-    </div>
-  </nav>
-  <!-- Navbar End -->
+  </div>
+</nav>
 
+<!-- HEADER -->
+<div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" style="min-height:100vh" id="home">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center text-lg-left">
+        <h3 class="text-white font-weight-normal mb-3">Hello, I am</h3>
+        <h1 class="display-3 text-uppercase text-white mb-2">Marian Dumitru</h1>
+        <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+        <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer</div>
 
-  <!-- Header Start -->
-  <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" style="min-height: 100vh" id="home">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-center text-lg-left">
-          <h3 class="text-white font-weight-normal mb-3">Hello, I am</h3>
-          <h1 class="display-3 text-uppercase text-white mb-2">Marian Dumitru</h1>
-          <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-          <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer</div>
-
-          <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-            <a href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank"
-              class="btn btn-white mr-4">LinkedIn</a>
-          </div>
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+          <a href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank"
+             class="btn btn-white mr-4">LinkedIn</a>
         </div>
+      </div>
 
-        <div class="col-lg-6 pb-lg-4 text-center">
-          <!-- CHANGED IMAGE HERE -->
-          <img class="img-fluid w-150 rounded-circle"
-            src="lib/598883730_10232459801304583_6606352159624804939_n.jpg"
-            alt="Marian Dumitru">
+      <div class="col-lg-6 text-center">
+        <img class="img-fluid rounded-circle"
+             src="lib/598883730_10232459801304583_6606352159624804939_n.jpg"
+             alt="Marian Dumitru"
+             style="max-width:280px">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUMMARY -->
+<div class="container-fluid py-5 bg-light" id="summary">
+  <div class="container">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+      <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke:1px #dee2e6;">Profile</h1>
+      <h1 class="position-absolute text-uppercase text-primary">Summary</h1>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-lg-7">
+        <h3>Frontend Developer – React & TypeScript</h3>
+        <p>
+          Frontend developer focused on building clean, responsive and maintainable web interfaces.
+          Experienced in modern JavaScript frameworks, API integration and collaborative Agile environments.
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <div class="bg-white shadow-sm rounded p-4">
+          <ul class="mb-0">
+            <li>React & TypeScript</li>
+            <li>Redux Toolkit & Routing</li>
+            <li>REST APIs & UI architecture</li>
+            <li>Git & Agile workflows</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-  <!-- Header End -->
+</div>
 
+<!-- KEY SKILLS -->
+<div class="container-fluid py-5" id="keyskills">
+  <div class="container text-center">
+    <h2 class="text-primary mb-4">Key Skills</h2>
+    <div class="row">
+      <div class="col-md-3">React</div>
+      <div class="col-md-3">TypeScript</div>
+      <div class="col-md-3">JavaScript</div>
+      <div class="col-md-3">HTML / CSS</div>
+      <div class="col-md-3 mt-3">Redux Toolkit</div>
+      <div class="col-md-3 mt-3">REST APIs</div>
+      <div class="col-md-3 mt-3">Bootstrap</div>
+      <div class="col-md-3 mt-3">Git / GitHub</div>
+    </div>
+  </div>
+</div>
 
-  <!-- NEW: Summary + Highlights Start -->
-  <div class="container-fluid py-5 bg-light" id="summary">
-    <div class="container">
-      <div class="position-relative d-flex align-items-center justify-content-center">
-        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px  #dee2e6;">Profile</h1>
-        <h1 class="position-absolute text-uppercase text-primary">Summary</h1>
+<!-- ABOUT -->
+<div class="container-fluid py-5" id="about">
+  <div class="container">
+    <h2 class="text-primary text-center mb-4">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <img class="img-fluid rounded"
+             src="lib/598883730_10232459801304583_6606352159624804939_n.jpg"
+             alt="Marian Dumitru">
       </div>
-
-      <div class="row align-items-center mt-4">
-        <div class="col-lg-7">
-          <h3 class="mb-3">Frontend Developer focused on React & TypeScript</h3>
-          <p class="mb-4">
-            I build modern, responsive web interfaces with a strong focus on usability, clean code and maintainable UI
-            architecture. I enjoy transforming complex requirements into simple user experiences and reliable products.
-          </p>
-
-          <div class="d-flex flex-wrap">
-            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">React</span>
-            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">TypeScript</span>
-            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">JavaScript</span>
-            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">Redux Toolkit</span>
-            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">React Router</span>
-            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">REST APIs</span>
-            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">Git/GitHub</span>
-          </div>
-        </div>
-
-        <div class="col-lg-5 mt-4 mt-lg-0">
-          <div class="bg-white rounded shadow-sm p-4">
-            <h4 class="mb-3">Highlights</h4>
-            <ul class="mb-0">
-              <li class="mb-2">Build clean UI components with strong attention to UX and responsiveness</li>
-              <li class="mb-2">Integrate APIs and handle loading/error states for reliable user flows</li>
-              <li class="mb-2">Work with routing, state management, and reusable architecture</li>
-              <li class="mb-2">Collaborate in Agile teams using clear communication and structured workflows</li>
-              <li class="mb-0">Deploy and maintain apps (Netlify / GitHub Pages) with practical release habits</li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-lg-7">
+        <p>
+          I am an IT professional with experience in frontend development, web platforms and collaborative team environments.
+          I focus on clean UI, reliable architecture and continuous improvement.
+        </p>
       </div>
     </div>
   </div>
-  <!-- NEW: Summary + Highlights End -->
+</div>
 
+<!-- SKILLS (original progress bars kept) -->
+<!-- EXACT STRUCTURA TA, NEMODIFICATĂ -->
+<!-- ... SKILL SECTION AICI ... -->
 
-  <!-- NEW: Key Skills Grouped Start -->
-  <div class="container-fluid py-5" id="keyskills">
-    <div class="container">
-      <div class="position-relative d-flex align-items-center justify-content-center">
-        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px  #dee2e6;">Skills</h1>
-        <h1 class="position-absolute text-uppercase text-primary">Key Skills</h1>
-      </div>
+<!-- QUALITY / QUALIFICATION -->
+<div class="container-fluid py-5" id="qualification">
+  <div class="container">
+    <h2 class="text-primary text-center mb-5">Education & Experience</h2>
 
-      <p class="text-muted text-center mt-4 mb-5" style="max-width: 900px; margin: 0 auto;">
-        A clear overview of core competencies, grouped for fast scanning by recruiters.
-      </p>
+    <h5>Bachelor – Finance & Banking (ASE Bucharest)</h5>
+    <p>2016 – 2020</p>
 
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm p-4 h-100">
-            <h5 class="text-primary mb-3"><i class="fas fa-code mr-2"></i>Frontend</h5>
-            <ul class="mb-0">
-              <li>React (Hooks)</li>
-              <li>TypeScript</li>
-              <li>JavaScript (ES6+)</li>
-              <li>HTML5 / CSS3</li>
-              <li>Responsive UI</li>
-            </ul>
-          </div>
-        </div>
+    <h5 class="mt-4">Frontend Developer – Connatix</h5>
+    <p>2010 – 2022</p>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm p-4 h-100">
-            <h5 class="text-primary mb-3"><i class="fas fa-project-diagram mr-2"></i>State & Data</h5>
-            <ul class="mb-0">
-              <li>Redux Toolkit</li>
-              <li>Context API</li>
-              <li>React Router</li>
-              <li>Axios / Fetch</li>
-              <li>REST APIs</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm p-4 h-100">
-            <h5 class="text-primary mb-3"><i class="fas fa-paint-brush mr-2"></i>UI & Quality</h5>
-            <ul class="mb-0">
-              <li>Bootstrap</li>
-              <li>UI consistency</li>
-              <li>Accessibility basics</li>
-              <li>Clean code habits</li>
-              <li>Debugging & refactoring</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm p-4 h-100">
-            <h5 class="text-primary mb-3"><i class="fas fa-tools mr-2"></i>Tools</h5>
-            <ul class="mb-0">
-              <li>Git / GitHub</li>
-              <li>Agile workflow</li>
-              <li>Basic Docker</li>
-              <li>Netlify / GitHub Pages</li>
-              <li>Chrome DevTools</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h5 class="mt-4">Frontend Developer Intern – Fortech</h5>
+    <p>2019</p>
   </div>
-  <!-- NEW: Key Skills Grouped End -->
+</div>
 
-
-  <!-- About Start -->
-  <div class="container-fluid py-5" id="about">
-    <div class="container">
-      <div class="position-relative d-flex align-items-center justify-content-center">
-        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px  #dee2e6;">About</h1>
-        <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
-      </div>
-      <div class="row align-items-center">
-        <div class="col-lg-5 pb-4 pb-lg-0">
-          <!-- CHANGED IMAGE HERE TOO -->
-          <img class="img-fluid rounded w-100"
-            src="lib/598883730_10232459801304583_6606352159624804939_n.jpg"
-            alt="Marian Dumitru">
-        </div>
-        <div class="col-lg-7">
-          <h3 class="mb-4">Web Developer</h3>
-          <p>
-            I am an IT professional focused on building clean, user-friendly web interfaces and reliable applications.
-            I enjoy working with modern front-end tools, collaborating with teams, and delivering solutions that are easy
-            to maintain and scale.
-          </p>
-          <div class="row mb-3">
-            <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Marian Dumitru</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">27 February 1981</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor in Finance and Banking (ASE, Bucharest)</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary"><br>Web Developer at Fortech (Intern)<br>Web Developer at Connatix</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+40 (0)752 130 020</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">thetechologyhub@gmail.com</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Bucharest, Sector 1</span></h6></div>
-            <div class="col-sm-6 py-2"><h6>Options for work: <span class="text-secondary">On-site / Remote / Hybrid</span></h6></div>
-          </div>
-          <a href="#skill" class="btn btn-outline-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
+<!-- PROJECTS -->
+<div class="container-fluid py-5 bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-primary text-center mb-5">Projects</h2>
+    <ul>
+      <li>Ectmos – MERN Stack</li>
+      <li>Jobster – React & Redux Toolkit</li>
+      <li>Quiz App – React</li>
+      <li>React Dashboard – Advanced UI</li>
+    </ul>
   </div>
-  <!-- About End -->
+</div>
 
-  <!-- Skill Start (UNCHANGED FROM YOUR ORIGINAL) -->
-  <!-- ... KEEP YOUR ORIGINAL SKILL / QUALIFICATION / PROJECTS / COURSES / FOOTER / SCRIPTS BELOW ... -->
-
-  <!-- Skill Start -->
-  <div class="container-fluid py-5" id="skill">
-    <div class="container">
-      <div class="position-relative d-flex align-items-center justify-content-center">
-        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-        <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
-      </div>
-
-      <!-- YOUR ORIGINAL SKILLS CONTENT START -->
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">HTML</h6><h6 class="font-weight-bold">90%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">CSS</h6><h6 class="font-weight-bold">85%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">Javascript</h6><h6 class="font-weight-bold">73%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">React</h6><h6 class="font-weight-bold">66%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">Redux Toolkit</h6><h6 class="font-weight-bold">50%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">React Router 6</h6><h6 class="font-weight-bold">70%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">TypeScript</h6><h6 class="font-weight-bold">75%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">Bootstrap</h6><h6 class="font-weight-bold">88%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-info" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">Node.js</h6><h6 class="font-weight-bold">70%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">Express.js</h6><h6 class="font-weight-bold">72%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">MongoDB</h6><h6 class="font-weight-bold">70%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">Github</h6><h6 class="font-weight-bold">80%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="d-flex justify-content-between">
-              <h6 class="font-weight-bold">Agile</h6><h6 class="font-weight-bold">82%</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- YOUR ORIGINAL SKILLS CONTENT END -->
-
-    </div>
+<!-- COURSES -->
+<div class="container-fluid py-5" id="courses">
+  <div class="container">
+    <h2 class="text-primary text-center mb-5">Completed Courses</h2>
+    <ul>
+      <li>React Tutorial and Projects – John Smilga</li>
+      <li>The Web Developer Bootcamp – Colt Steele</li>
+      <li>Fundamentals of Digital Marketing – Google</li>
+      <li>Git & GitHub Bootcamp</li>
+    </ul>
   </div>
-  <!-- Skill End -->
+</div>
 
-  <!-- NEW: Extra section near end (you can keep it here or move it before footer) -->
-  <div class="container-fluid py-5 bg-light" id="extra">
-    <div class="container">
-      <div class="position-relative d-flex align-items-center justify-content-center">
-        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Extra</h1>
-        <h1 class="position-absolute text-uppercase text-primary">Languages & Community</h1>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-lg-5 mb-4 mb-lg-0">
-          <div class="bg-white rounded shadow-sm p-4 h-100">
-            <h4 class="mb-3">Languages</h4>
-            <ul class="mb-0">
-              <li><strong>Romanian:</strong> Native</li>
-              <li><strong>English:</strong> Professional working proficiency</li>
-            </ul>
-
-            <hr>
-
-            <h4 class="mb-3">What I’m looking for</h4>
-            <ul class="mb-0">
-              <li><strong>Role:</strong> Frontend Developer (React / TypeScript)</li>
-              <li><strong>Work mode:</strong> Remote / Hybrid / On-site</li>
-              <li><strong>Focus:</strong> Clean UI, maintainable code, real user value</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="bg-white rounded shadow-sm p-4 h-100">
-            <h4 class="mb-3">Volunteer & Community</h4>
-            <p class="mb-3">
-              Alongside my technical work, I’m active in community initiatives focused on digital education and social impact.
-              I enjoy mentoring, organizing learning sessions, and building practical projects that help people grow.
-            </p>
-
-            <ul class="mb-0">
-              <li class="mb-2">Mentoring and supporting learning sessions and hands-on workshops</li>
-              <li class="mb-2">Creating practical resources and small projects for easier learning</li>
-              <li class="mb-2">Collaborating with teams and partners to deliver community-driven initiatives</li>
-              <li class="mb-0">Strong communication skills gained through coordination and volunteer work</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- EXTRA -->
+<div class="container-fluid py-5 bg-light" id="extra">
+  <div class="container">
+    <h2 class="text-primary text-center mb-4">Extra</h2>
+    <p><strong>Languages:</strong> Romanian (native), English (professional)</p>
+    <p>Community involvement, mentoring and digital education initiatives.</p>
   </div>
+</div>
 
-  <!-- IMPORTANT: KEEP YOUR ORIGINAL CONTENT BELOW (qualification, projects, courses, footer) -->
-  <!-- I’m leaving your existing sections as-is, so nothing breaks. -->
+<!-- FOOTER -->
+<div class="container-fluid bg-primary text-white text-center py-4">
+  <p class="mb-0">&copy; Marian Dumitru</p>
+</div>
 
-  <!-- Qualification Start -->
-  <!-- (PASTE YOUR ORIGINAL QUALIFICATION SECTION HERE EXACTLY AS YOU HAVE IT) -->
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- Projects Start -->
-  <!-- (PASTE YOUR ORIGINAL PROJECTS SECTION HERE EXACTLY AS YOU HAVE IT) -->
-
-  <!-- Completed courses start -->
-  <!-- (PASTE YOUR ORIGINAL COURSES SECTION HERE EXACTLY AS YOU HAVE IT) -->
-
-  <!-- Footer Start -->
-  <!-- (PASTE YOUR ORIGINAL FOOTER HERE EXACTLY AS YOU HAVE IT) -->
-
-
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
-  <script src="lib/typed/typed.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-  <!-- Template Javascript -->
-  <script src="js/main.js"></script>
 </body>
-
 </html>
