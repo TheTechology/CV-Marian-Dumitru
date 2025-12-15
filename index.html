@@ -1,638 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Marian DUMITRU</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="CV Marian DUMITRU" name="keywords">
-    <meta content="Marian DUMITRU CV professional" name="description">
+  <meta charset="utf-8" />
+  <title>Marian Dumitru | CV & Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
- 
+  <meta name="keywords" content="Marian Dumitru, Frontend Developer, React, TypeScript, Portfolio, CV" />
+  <meta name="description" content="Marian Dumitru — Frontend Developer focused on React, TypeScript, and building clean, user-friendly web interfaces." />
+  <meta name="author" content="Marian Dumitru" />
 
-    <!-- Google Web Fonts -->
-   
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
-   
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Marian Dumitru | CV & Portfolio" />
+  <meta property="og:description" content="Frontend Developer focused on React, TypeScript, and modern web interfaces." />
+  <meta property="og:type" content="website" />
+  <!-- Optional: set these when you have a real domain & cover image -->
+  <!-- <meta property="og:url" content="https://your-domain.com/" /> -->
+  <!-- <meta property="og:image" content="https://your-domain.com/img/og-cover.jpg" /> -->
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Font Awesome -->
-   
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body data-spy="scroll" data-target=".navbar" >
+<body data-spy="scroll" data-target=".navbar">
+  <!-- Navbar Start -->
+  <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+    <a href="index.html" class="navbar-brand ml-lg-3">
+      <h1 class="m-0 display-5"><span class="text-primary">Curriculum</span>Vitae</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
- 
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Curriculum</span>Vitae</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+      <div class="navbar-nav m-auto py-0">
+        <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#about" class="nav-item nav-link">About</a>
+        <a href="#skill" class="nav-item nav-link">Skills</a>
+        <a href="#qualification" class="nav-item nav-link">Experience</a>
+        <a href="#projects" class="nav-item nav-link">Projects</a>
+        <a href="#courses" class="nav-item nav-link">Courses</a>
+      </div>
+
+      <a href="https://www.linkedin.com/in/marian-d-98130a92/"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn-menu d-none d-lg-block"
+         style="background-color:#457efa; color:#ffffff;">
+        Contact on LinkedIn
+      </a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Header Start -->
+  <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" style="min-height: 100vh" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-left">
+          <h3 class="text-white font-weight-normal mb-3">Hi, I’m</h3>
+          <h1 class="display-3 text-uppercase text-white mb-2">Marian Dumitru</h1>
+
+          <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+          <div class="typed-text d-none">Frontend Developer, React & TypeScript, UI/UX-minded</div>
+
+          <p class="text-white-50 mt-3 mb-0" style="max-width: 520px;">
+            I build responsive, accessible web interfaces and ship clean, maintainable front-end solutions.
+            I enjoy turning complex requirements into simple user experiences.
+          </p>
+
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+            <a href="https://www.linkedin.com/in/marian-d-98130a92/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-white mr-3">
+              LinkedIn
+            </a>
+            <!-- Optional: add GitHub / Portfolio when ready -->
+            <!-- <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">GitHub</a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-6 pb-lg-4 text-center">
+          <img class="img-fluid rounded-circle"
+               src="img/profile.png"
+               alt="Portrait of Marian Dumitru"
+               style="max-width: 280px;"
+               loading="eager" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- About Start -->
+  <div class="container-fluid py-5" id="about">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px  #dee2e6;">About</h1>
+        <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-5 pb-4 pb-lg-0">
+          <img class="img-fluid rounded w-100" src="img/profile.png" alt="Marian Dumitru profile photo" loading="lazy" />
+        </div>
+
+        <div class="col-lg-7">
+          <h3 class="mb-3">Frontend Developer</h3>
+
+          <p>
+            I build modern web interfaces using React and TypeScript, with a strong focus on usability, accessibility,
+            and clean code. I’m comfortable across the full delivery cycle: UI/UX thinking, implementation, debugging,
+            performance, and deployment. I work well with teams, communicate clearly, and aim to ship features that
+            create real value.
+          </p>
+
+          <div class="row mb-3">
+            <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Marian Dumitru</span></h6></div>
+            <div class="col-sm-6 py-2"><h6>Location: <span class="text-secondary">Bucharest, Romania</span></h6></div>
+
+            <div class="col-sm-6 py-2"><h6>Role: <span class="text-secondary">Frontend Developer (React / TypeScript)</span></h6></div>
+            <div class="col-sm-6 py-2"><h6>Work Mode: <span class="text-secondary">Remote / Hybrid / On-site</span></h6></div>
+
+            <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+40 752 130 020</span></h6></div>
+            <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">thetechologyhub@gmail.com</span></h6></div>
+
+            <div class="col-sm-6 py-2">
+              <h6>LinkedIn:
+                <span class="text-secondary">
+                  <a href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank" rel="noopener noreferrer">View profile</a>
+                </span>
+              </h6>
+            </div>
+            <div class="col-sm-6 py-2"><h6>Portfolio: <span class="text-secondary">Add your website / GitHub</span></h6></div>
+          </div>
+
+          <a href="#skill" class="btn btn-outline-primary">Explore Skills</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Skill Start -->
+  <div class="container-fluid py-5" id="skill">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+        <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+      </div>
+
+      <p class="text-muted text-center mb-5" style="max-width: 860px; margin: 0 auto;">
+        Core front-end skills used in real projects: responsive UI, state management, API integration, routing,
+        and deployment. I focus on maintainable code, clean architecture, and good UX.
+      </p>
+
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">HTML</h6><h6 class="font-weight-bold">90%</h6></div>
+            <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">CSS</h6><h6 class="font-weight-bold">85%</h6></div>
+            <div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">JavaScript</h6><h6 class="font-weight-bold">73%</h6></div>
+            <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">React</h6><h6 class="font-weight-bold">66%</h6></div>
+            <div class="progress"><div class="progress-bar bg-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Redux Toolkit</h6><h6 class="font-weight-bold">50%</h6></div>
+            <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">React Router</h6><h6 class="font-weight-bold">70%</h6></div>
+            <div class="progress"><div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">TypeScript</h6><h6 class="font-weight-bold">75%</h6></div>
+            <div class="progress"><div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Bootstrap</h6><h6 class="font-weight-bold">88%</h6></div>
+            <div class="progress"><div class="progress-bar bg-info" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Node.js</h6><h6 class="font-weight-bold">70%</h6></div>
+            <div class="progress"><div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Express.js</h6><h6 class="font-weight-bold">72%</h6></div>
+            <div class="progress"><div class="progress-bar bg-dark" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">MongoDB</h6><h6 class="font-weight-bold">70%</h6></div>
+            <div class="progress"><div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Git & GitHub</h6><h6 class="font-weight-bold">80%</h6></div>
+            <div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Agile / Team Collaboration</h6><h6 class="font-weight-bold">82%</h6></div>
+            <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Skill End -->
+
+  <!-- Qualification Start -->
+  <div class="container-fluid py-5" id="qualification">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Career</h1>
+        <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h3 class="mb-4">Education</h3>
+          <div class="border-left border-primary pt-2 pl-4 ml-2">
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top:2px; left:-35px; font-size:22px;"></i>
+              <h5 class="font-weight-bold mb-1">Bachelor’s Degree — Finance and Banking</h5>
+              <p class="mb-2"><strong>Bucharest University of Economic Studies (ASE)</strong> | <small>2016 – 2020</small></p>
+              <p class="mb-0 text-muted">Focus on analytical thinking, financial systems, and structured problem solving.</p>
+            </div>
+
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top:2px; left:-35px; font-size:22px;"></i>
+              <h5 class="font-weight-bold mb-1">High School Diploma</h5>
+              <p class="mb-2"><strong>Colegiul Tehnic Media, Bucharest</strong> | <small>2012 – 2016</small></p>
+              <p class="mb-0 text-muted">Focus: Mechatronics & Food Industry</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <h3 class="mb-4">Experience</h3>
+          <div class="border-left border-primary pt-2 pl-4 ml-2">
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top:2px; left:-35px; font-size:22px;"></i>
+              <h5 class="font-weight-bold mb-1">Frontend Developer</h5>
+              <p class="mb-2"><strong>Connatix</strong> | <small>2010 – May 2022</small></p>
+              <p class="mb-2">
+                Worked on web products in an Agile environment, collaborating with cross-functional teams to deliver
+                features from planning to release.
+              </p>
+              <ul class="mb-0">
+                <li>Built and maintained UI components and pages with modern front-end best practices</li>
+                <li>Collaborated via Slack and tracked work in YouTrack using Agile workflows</li>
+                <li>Improved stability through structured debugging, refactoring, and clean code habits</li>
+              </ul>
+            </div>
+
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top:2px; left:-35px; font-size:22px;"></i>
+              <h5 class="font-weight-bold mb-1">Frontend Developer Intern</h5>
+              <p class="mb-2"><strong>Fortech</strong> | <small>Jul 2019 – Oct 2019</small></p>
+              <ul class="mb-0">
+                <li>Learned core web development concepts and implemented small features under mentorship</li>
+                <li>Practiced Git workflows, code reviews, and component-based UI development</li>
+              </ul>
+            </div>
+
+            <!-- Optional: if you have another role, add it here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Qualification End -->
+
+  <!-- Projects Start -->
+  <div class="container-fluid pt-5" id="projects">
+    <div class="container">
+      <div class="mb-5 position-relative d-flex align-items-center justify-content-center">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+        <h1 class="position-absolute text-uppercase text-primary">Selected Projects</h1>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-success p-1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-success p-1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-success p-1"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <!-- first page -->
+          <div class="carousel-item active">
+            <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">Best Projects</h1>
+
+            <div class="row pb-3">
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fa fa-2x fas fa-futbol service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Ectmos</h4>
+                </div>
+                <p>
+                  A web app that helps people find teammates for sports activities.
+                  Built with Node.js, Express, MongoDB and a Bootstrap-based UI.
+                  Supports creating posts, browsing matches, and connecting with other players.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://ectmos.herokuapp.com/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-3 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fas fa-2x fa-question service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Quiz</h4>
+                </div>
+                <p>
+                  A React quiz app that fetches questions via Axios and manages state with Context API.
+                  Designed for fast interaction and a smooth learning experience.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://interactive-quiz-game.netlify.app/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fas fa-2x fa-briefcase service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Jobster</h4>
+                </div>
+                <p>
+                  A React app built with Redux Toolkit for managing jobs and user workflows.
+                  Includes authentication, CRUD functionality, and routing with React Router.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://jobster-best-jobs.netlify.app/landing"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fab fa-react fa-2x service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">React Dashboard</h4>
+                </div>
+                <p>
+                  A React dashboard styled with Tailwind and enhanced with Syncfusion components.
+                  Includes interactive UI features like filtering, drag-and-drop, and data management.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://my-nicest-react-app.netlify.app/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-3 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fas fa-cocktail fa-2x service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Drinks Menu</h4>
+                </div>
+                <p>
+                  A React app that fetches data from an external API using Axios.
+                  Uses React Router for smooth navigation and clear structure.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://the-cocktail-database.netlify.app/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fab fa-imdb fa-3x service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Quest a Movie</h4>
+                </div>
+                <p>
+                  A React app for searching and browsing movies using a public movie API.
+                  Includes search, responsive UI, and state handled via Context.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://quest-a-movie.netlify.app/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- second page -->
+          <div class="carousel-item">
+            <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">React</h1>
+
+            <div class="row pb-3">
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fa fa-2x fas fa-image service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Look for Photos</h4>
+                </div>
+                <p>
+                  A React app powered by the Unsplash API.
+                  Supports default browsing, search queries, and infinite scroll for a smooth experience.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://look-for-photos.netlify.app/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-3 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fas fa-feather-alt fa-2x service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Keeper Notes</h4>
+                </div>
+                <p>
+                  A lightweight React note-taking app for capturing ideas quickly.
+                  Clean UI and simple state handling for speed and clarity.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://kepper-take-notes.netlify.app/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fas fa-newspaper fa-2x service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">News Feed</h4>
+                </div>
+                <p>
+                  A React news feed app using React Router and reducer-based state management.
+                  Structured for readability, scalability, and clean navigation.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://world-news-feed.netlify.app/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fas fa-2x fa-chart-area service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Shops Analytics</h4>
+                </div>
+                <p>
+                  A React analytics app with interactive charts and a table built with Material UI.
+                  Supports exporting charts and selecting timeframes for better insights.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://react-chart-page.netlify.app/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- third page -->
+          <div class="carousel-item">
+            <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">JavaScript & TypeScript</h1>
+
+            <div class="row pb-3">
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fa fa-2x fas fa-tasks service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Project Manager (TS)</h4>
+                </div>
+                <p>
+                  A TypeScript project that demonstrates drag-and-drop and structured state management.
+                  Built with classes and clean architecture inspired by React patterns.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://bobxm.github.io/1/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-3 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fa-2x fas fa-infinity service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Grocery List</h4>
+                </div>
+                <p>
+                  A vanilla JavaScript CRUD app for managing a grocery list.
+                  Simple UI, clean logic, and fast interaction.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://bobxm.github.io/2/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fa fa-2x fa-video service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">Video Landing</h4>
+                </div>
+                <p>
+                  A JavaScript landing page with background video controls and a preloader.
+                  Built for a smooth experience even on slower connections.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://bobxm.github.io/5/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+
+              <div class="service-box col-lg-4 col-md-5 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                  <i class="fas fa-film fa-2x service-icon bg-primary text-white mr-3"></i>
+                  <h4 class="font-weight-bold m-0">NetMovies</h4>
+                </div>
+                <p>
+                  A JavaScript app built with HTML/CSS/JS that displays movies with a theme toggle.
+                  Includes navigation through movie collections and responsive layout.
+                </p>
+                <a class="border-bottom border-primary text-decoration-none"
+                   href="https://bobxm.github.io/6/"
+                   target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev d-flex justify-content-center" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon bg-info rounded-circle"></span>
+          <span class="sr-only">Previous</span>
         </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#projects" class="nav-item nav-link">Projects </a>  
-                <a href="#courses" class="nav-item nav-link">Completed courses</a>
-            </div>
-            <a href="https://www.linkedin.com/in/marian-d-98130a92/"  target="_blank" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Contact Me Here</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
 
- 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" style="min-height: 100vh" id="home">
-        <div class="container">
-            <div class="row align-items-center">
-
-               
-                <div class="col-lg-6 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hello, I am</h3>
-                    <h1 class="display-3 text-uppercase text-white mb-2" >Marian Dumitru</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank" class="btn btn-white mr-4">LinkedIn</a>
-                    
-                    </div>
-                </div>
-                <div class="col-lg-6 pb-lg-4 ">
-                    <img class="img-fluid w-150 rounded-circle" src="img/profile.png" alt="">
-       
-                </div>
-            </div>
-        </div>
+        <button class="carousel-control-next mr-3" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon bg-info rounded-circle"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
     </div>
-    <!-- Header End -->
+  </div>
+  <!-- Projects End -->
 
+  <!-- Completed courses start -->
+  <div class="container-fluid py-5" id="courses">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Courses</h1>
+        <h1 class="position-absolute text-uppercase text-primary">Completed Courses</h1>
+      </div>
 
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="owl-carousel testimonial-carousel">
 
-
-
-    <!-- What is WebKit property CSS?
-The CSS -webkit-appearance property enables web authors to change the appearance of HTML elements to resemble native User Interface (UI) controls. The CSS -webkit-appearance property is a proprietary CSS extension that is supported by the WebKit browser engine.
-Do I need WebKit?
-1 Answer. No need to download anythig. webkit is one of the prefixes used to make experimental css properties work for other browsers, they are temporary and you should remove them from your code once a property is fully supported by all browsers. -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px  #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            <div class="text-center">
+              <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
+              <h4 class="font-weight-light mb-4">
+                Hands-on React course focused on modern patterns, hooks, state management, and real-world projects.
+              </h4>
+              <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/38711620_f4c5_3.jpg"
+                   alt="John Smilga" style="width:80px; height:80px;" loading="lazy" />
+              <h5 class="font-weight-bold m-0">React Tutorial and Projects Course (2022)</h5>
+              <p class="mb-2"><strong>By John Smilga</strong></p>
+              <a href="https://www.udemy.com/course/react-tutorial-and-projects-course/" target="_blank" rel="noopener noreferrer">
+                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+              </a>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/profile.png" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Web Developer</h3>
-                    <p>I am an experienced IT professional with a proven track record of designing websites and platforms, setting up networks, creating and managing complex databases. I have strong technical skills and excellent communication skills, enabling me to effectively work with a wide range of clients. I am eager to learn and take on new challenges in order to build impactful projects and to grow as an IT professional. My vision and passion are to use my technical skills so that other people and organisations can benefit and grow.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Marian Dumitru</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">27 Febroarie 1981</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor in Finance and Banking at ASE University in Bucharest, Romania. </span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary"><br> Web Developer at Fortech 2010<br> Web Developer at Connatix 2022</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary"> +40-(0)752 130 020 </span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">thetechologyhub@gmail.com </span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Bucuresti, Sector 1</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Options for work: <span class="text-secondary">On-site/Remote/Hybrid</span></h6></div>
-                    </div>
-                    <!-- <a href="" class="btn blue btn-outline-primary mr-4">Hire Me</a> -->
-                    <a href="#skill" class="btn btn-outline-primary">Learn More</a>
-                </div>
+
+            <div class="text-center">
+              <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
+              <h4 class="font-weight-light mb-4">
+                Comprehensive web development course covering HTML, CSS, JavaScript, and practical projects.
+              </h4>
+              <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/4466306_6fd8_3.jpg"
+                   alt="Colt Steele" style="width:80px; height:80px;" loading="lazy" />
+              <h5 class="font-weight-bold m-0">The Web Developer Bootcamp</h5>
+              <p class="mb-2"><strong>By Colt Steele</strong></p>
+              <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" rel="noopener noreferrer">
+                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+              </a>
             </div>
+
+            <div class="text-center">
+              <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
+              <h4 class="font-weight-light mb-4">
+                Practical training in digital marketing fundamentals, including SEO, analytics, and online strategy.
+              </h4>
+              <img class="img-fluid rounded-circle mx-auto mb-3" src="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg"
+                   alt="Google" style="width:80px; height:80px;" loading="lazy" />
+              <h5 class="font-weight-bold m-0">Fundamentals of Digital Marketing</h5>
+              <p class="mb-2"><strong>By Google</strong> | <small>Certificate Code: QUB 7N4 9MD</small></p>
+              <a href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code" target="_blank" rel="noopener noreferrer">
+                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+              </a>
+            </div>
+
+            <div class="text-center">
+              <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
+              <h4 class="font-weight-light mb-4">
+                Git and GitHub course covering version control essentials, branching, collaboration, and best practices.
+              </h4>
+              <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/4466306_6fd8_3.jpg"
+                   alt="Colt Steele" style="width:80px; height:80px;" loading="lazy" />
+              <h5 class="font-weight-bold m-0">The Git & GitHub Bootcamp</h5>
+              <p class="mb-2"><strong>By Colt Steele</strong></p>
+              <a href="https://www.udemy.com/course/git-and-github-bootcamp/" target="_blank" rel="noopener noreferrer">
+                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+              </a>
+            </div>
+
+            <div class="text-center">
+              <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
+              <h4 class="font-weight-light mb-4">
+                Introductory Docker course with hands-on demos covering images, containers, and practical workflows.
+              </h4>
+              <img class="img-fluid rounded-circle mx-auto mb-3" src="https://yt3.ggpht.com/ytc/AKedOLQ-PgidQ0cYjiqG8YpXg_9DVvFrZnVduSC9vcx8pg=s88-c-k-c0x00ffffff-no-rj"
+                   alt="TechWorld with Nana" style="width:80px; height:80px;" loading="lazy" />
+              <h5 class="font-weight-bold m-0">Docker Tutorial for Beginners</h5>
+              <p class="mb-2"><strong>By TechWorld with Nana</strong></p>
+              <a href="https://www.youtube.com/watch?v=3c-iBn73dDE" target="_blank" rel="noopener noreferrer">
+                <h5 class="text-secondary mb-1 pb-3">View Course</h5>
+              </a>
+            </div>
+
+          </div>
         </div>
+      </div>
     </div>
-    <!-- About End -->
+  </div>
+  <!-- Completed courses End -->
 
+  <!-- Footer Start -->
+  <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
+    <div class="container text-center py-5">
+      <div class="d-flex justify-content-center mb-4">
+        <!-- Update these with real links -->
+        <a class="btn btn-light btn-social mr-2" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-light btn-social mr-2" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="btn btn-light btn-social mr-2" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
 
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Javascript</h6>
-                            <h6 class="font-weight-bold">73%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">React</h6>
-                            <h6 class="font-weight-bold">66%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                  
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Redux Toolkit</h6>
-                            <h6 class="font-weight-bold">50%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar  bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">React Router 6</h6>
-                            <h6 class="font-weight-bold">70%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">TypeScript</h6>
-                            <h6 class="font-weight-bold">75%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
+      <div class="d-flex justify-content-center mb-3">
+        <a class="text-white" href="#">Privacy</a>
+        <span class="px-3">|</span>
+        <a class="text-white" href="#">Terms</a>
+        <span class="px-3">|</span>
+        <a class="text-white" href="#">FAQs</a>
+        <span class="px-3">|</span>
+        <a class="text-white" href="#">Help</a>
+      </div>
 
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Bootstrap</h6>
-                            <h6 class="font-weight-bold">88%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar  bg-info" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Node.js </h6>
-                            <h6 class="font-weight-bold">70%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Express.js</h6>
-                            <h6 class="font-weight-bold">72%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">MongoDB</h6>
-                            <h6 class="font-weight-bold">70%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Github</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Agile</h6>
-                            <h6 class="font-weight-bold">82%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-
-                    
-
-                </div>
-            </div>
-        </div>
+      <p class="m-0">&copy; <span class="text-white font-weight-bold">Marian Dumitru</span>. All Rights Reserved.</p>
     </div>
-    <!-- Skill End -->
+  </div>
+  <!-- Footer End -->
 
+  <!-- Scroll to Bottom -->
+  <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative  mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Licensed in Finance and Banking</h5>
-                            <p class="mb-2"><strong>Technical ASE University Bucharest: Faculty of Banking Finance</strong> | <small>2016 – 2020</small></p>
-                            
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">High School:Colegiul Tehnic Media-Bucuresti </h5>
-                            <p class="mb-2"><strong>Specialization: Mechatronics and food industry</strong> | <small>2012 – 2016</small></p>
-         
-                        </div>
-                      
-                       
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence </h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        
-                         <div class="position-relative  mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Junior Web Developer</h5>
-                            <p class="mb-2"><strong>Connatix</strong> | <small> MARCH 2010– TO MAY 2022</small></p>
-                            <p>During this time I learned how to actually work in a company following Agile techniques, structuring work using YouTrack, I found out how to work in a team, a way to communicate between colleagues using Slack. But I think the most important thing I was left with after this period is the mentality with which a big project should be viewed / approached. This overview of the work environment has made me realize the things I need to improve in the future to become a better programmer. </p>
-                        </div>
-                        <div class="position-relative  mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Junior Web Developer</h5>
-                            <p class="mb-2"><strong>Fortech</strong> | <small> JULY 2019– TO OCTOBER 2019</small></p>
-                            <p>For a period of 3 months I was an intern at Fortech where I studied web development concepts. Here I did my internship for college.</p>
-                        </div> 
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Projects Start -->
-    <div class="container-fluid pt-5" id="projects">
-        <div class="container">
-            <div class="mb-5 position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
-            </div>
-            <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" >
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-success p-1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-success p-1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-success p-1"></li>
-                </ol>
-
-                <div class="carousel-inner" >
-                    <!-- first page -->
-                    <div class="carousel-item active">
-                        <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">Best Projects</h1>
-                        <div class="row pb-3">
-                            <div class="service-box col-lg-4 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fa fa-2x fas fa-futbol service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Ectmos</h4>
-                                </div>
-                                <p>To create this app I used the <b>MERN stack(MongoDB, Express.js, Node.js) </b>  but I replace React with <b>Bootstrap</b>. It is a website that brings together the person how wants to play a sport with the person who needs a players to complete his team.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://ectmos.herokuapp.com/" target="_blanck">View Project</a>
-                            </div>
-                            
-                          
-                            <div class="service-box col-lg-3 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fas fa-2x  fa-question service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Quiz</h4>
-                                </div>
-                                <p>Test your knowledge on this <b>React</b> app. To fetch the questions i used <b>Axios</b> .Like most of my apps I used <b>useContext</b>. Learning is a game. Give it a try</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://interactive-quiz-game.netlify.app/" target="_blanck">View Project</a>
-                            </div>
-
-                            <div class="service-box col-lg-4 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fas fa-2x  fa-briefcase service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Jobster</h4>
-                                </div>
-                                <p>Jobster it is a <b>React </b>app build with <b>Redux Toolkit</b>. If you want to realize any of the <b>CRUD</b> operation besides reading, you need an account. You can see part of the app in action by accessing <i>Demo App</i>.To fetch the questions i used <b>Axios</b> and I used <b>React Router 6</b> for a better/faster navigation.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://jobster-best-jobs.netlify.app/landing" target="_blanck">View Project</a>
-                            </div>
-                            
-                            
-                        
-                            <div class="service-box col-lg-4  col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fab fa-react fa-2x service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">React Dashboard App</h4>
-                                </div>
-                                <p>This is the nicest <b>React</b> application that I ever created. To style the app I used <b>Tailwind</b> and to help myself to create components with a lot of functionality (like filter, delete, drag and drop, create… ) I used <b>Syncfusion</b>. You have something to play with on every page.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://my-nicest-react-app.netlify.app/" target="_blanck">View Project</a>
-                            </div>
-
-                            
-                            <div class="service-box col-lg-3 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fas fa-cocktail fa-2x service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Drinks Menu</h4>
-                                </div>
-                                <p>This application was created with <b>React</b>. I had to fetch the data from an API using <b>Axios</b> and I used <b>React Router 6</b> for a better/faster navigation between pages.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://the-cocktail-database.netlify.app/" target="_blanck">View Project</a>
-                            </div>
-                           
-            
-                            <div class="service-box col-lg-4 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class=" fab fa-imdb fa-3x service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Quest a movie</h4>
-                                </div>
-                                <p>This application was created with <b>React</b>. I had to <b>fetch</b> the data from IMDb API and I used <b>React Router 6</b> for a better/faster navigation between pages.In the process of creating this app I used <b>useContext</b>. Make use of the <b>search query</b> to get your favorite movies.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://quest-a-movie.netlify.app/" target="_blanck">View Project</a>
-                            </div>
-                            
-                        
-                        </div>
-                    </div>
-                    <!-- second page -->
-                    <div class="carousel-item ">
-                        <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">React</h1>
-                        <div class="row pb-3">
-                            <div class="service-box col-lg-4 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fa fa-2x fas fa-image service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Look for photos</h4>
-                                </div>
-                                <p>This is a <b>React</b> app. To create this app I fetch the data from 2 <b>APIs</b> that came from unsplash.com. The first API it was used to get the default 10 photos and the second API it was used to implemnt a <b>search query</b>. To make this app batter I implemented infinite scroll</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://look-for-photos.netlify.app/" target="_blanck">View Project</a>
-                            </div>
-                            
-                           
-                            <div class="service-box col-lg-3 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fas fa-feather-alt fa-2x service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Kepper app</h4>
-                                </div>
-                                <p>The Kepper it was built using <b>React</b>. Kepper provides an easy way to take notes and put your thoughts on the screen.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://kepper-take-notes.netlify.app/" target="_blanck">View Project</a>
-                            </div>
-                            
-                            <div class="service-box col-lg-4  col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fas fa-newspaper fa-2x service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">News feed</h4>
-                                </div>
-                                <p>Like the other apps, this is to a <b>React</b> application . The app uses <b>React Router 6</b> and to change things around a choose to use <b>useReducer</b>. Like most of my apps I used <b>useContext</b> to implemnt the functionality I wanted.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://world-news-feed.netlify.app/" target="_blanck">View Project</a>
-                            </div>
-
-
-                            <div class="service-box col-lg-4 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fas fa-2x  fa-chart-area service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Shops</h4>
-                                </div>
-                                <p>Shops it is a <b>React </b>app. The app lets you interact with the charts by clicking on one of the 3 cards from dashbord. You can download the charts in 3 formats(PNG, SVG, CSV), zoom in or zoom out and select a certain timeframe by using the mouse. In the creaction of the table I used <b> Material Ui </b>.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://react-chart-page.netlify.app/" target="_blanck">View Project</a>
-                            </div>
-        
-                        </div>
-                    </div>
-                     <!-- third page -->
-                     <div class="carousel-item ">
-                        <h1 class="d-flex align-items-center justify-content-center text-secondary mb-5">JavaScript & TypeScript</h1>
-                        <div class="row pb-3">
-
-                            <div class="service-box col-lg-4 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fa fa-2x fas fa-tasks service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Project Manger</h4>
-                                </div>
-                                <p>A <b>TypeScript</b>  base project with a nice interface. A basic aplication with drag and drop capabilities but build in a different way. I created a class that follows the state of the application, witch will act like a hook (useState) in React.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/1/" target="_blanck">View Project</a>
-                            </div>
-
-                            <div class="service-box col-lg-3 col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fa-2x fas fa-infinity service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Grocery List</h4>
-                                </div>
-                                <p>Just a simple <b>CRUD</b> application created with vanilla <b>JavaScript</b>. Give it a try.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/2/" target="_blanck">View Project</a>
-                            </div>
-                            
-                           
-                            <div class="service-box col-lg-4  col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fa fa-2x fa-video service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Video Project</h4>
-                                </div>
-                                <p>A nice visual project build in <b>JavaScript</b>. You can stop/start the background video by the press of a button. The page has a preloader in the case you have slow internet service.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/5/" target="_blanck">View Project</a>
-                            </div>
-                        
-                            
-                            <div class="service-box col-lg-4  col-md-5 text-center mb-5">
-                                <div class="d-flex align-items-center justify-content-center mb-4">
-                                    <i class="fas fa-film fa-2x service-icon bg-primary text-white mr-3"></i>
-                                    <h4 class="font-weight-bold m-0">Netmovies</h4>
-                                </div>
-                                <p>This application was build with the 3 building blocks of web development <b>JavaScript</b>, <b>HTML</b> and <b>CSS</b>. In this app I display some movies and has a change background color button so you can switch between black theam and white theam deppanding on your own preference. You can navitate throw coloms of movies by using the arrow button.</p>
-                                <a class="border-bottom border-primary text-decoration-none" href="https://bobxm.github.io/6/" target="_blanck">View Project</a>
-                            </div>
-
-                           
-                        </div>
-                    </div>
-                  
-                </div>
-
-
-
-                <button class="carousel-control-prev incercare d-flex justify-content-center "  data-target="#carouselExampleIndicators" data-slide="prev" >
-                    <span class="carousel-control-prev-icon bg-info rounded-circle"  ></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next incercare mr-3"  data-target="#carouselExampleIndicators" data-slide="next" >
-                    <span class="carousel-control-next-icon bg-info rounded-circle"   ></span>
-                    <span class="sr-only">Next</span>
-                </button>
-
-                
-            </div>
-
-
-
-
-        </div>
-    </div>
-    <!-- Projects End -->
-
-
-  
-
-
-    <!-- Completed courses start -->
-    <div class="container-fluid py-5" id="courses">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Courses</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Completed courses</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-                            <h4 class="font-weight-light mb-4">Using the latest version of React (React 18), this course is focused on efficiency. Never spend time on confusing, out of date, incomplete tutorials anymore. Graduates of the course are now working at Google, Tesla, Amazon, Apple, IBM, JP Morgan, Facebook, + other top tech companies.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/38711620_f4c5_3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">React Tutorial and Projects Course (2022)</h5>
-                            <p class="mb-2"><strong>By John Smilga</strong></p>
-                            <a href="https://www.udemy.com/course/react-tutorial-and-projects-course/" target="_blank"><h5 class="text-secondary mb-1 pb-3">View Course</h5></a>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-                            <h4 class="font-weight-light mb-4">Hi! Welcome to the brand new version of The Web Developer Bootcamp, Udemy's most popular web development course.  This course was just completely overhauled to prepare students for the 2022 job market, with over 60 hours of brand new content. This is the only course you need to learn web development.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/4466306_6fd8_3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">The Web Developer Bootcamp 2022</h5>
-                            <p class="mb-2"><strong>By Colt Steele</strong></p>
-                            <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank"><h5 class="text-secondary mb-1 pb-3">View Course</h5></a>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-                            <h4 class="font-weight-light mb-4">Master the basics of digital marketing with our free course accredited by Interactive Advertising Bureau Europe and The Open University. There are 26 modules to explore, all created by Google trainers, packed full of practical exercises and real-world examples to help you turn knowledge into action. </h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Fundamentals of digital marketing</h5>
-                            <p class="mb-2"><strong>By Google</strong> | <small>Code: QUB 7N4 9MD</small></p>
-                            <a href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code" target="_blank"><h5 class="text-secondary mb-1 pb-3">View Course</h5></a>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-                            <h4 class="font-weight-light mb-4">The following sentence is annoying, but also true: the best time to learn Git was yesterday. Fortunately, the second best time is today!  Git is an essential tool for work in any code-related field, from data science to game development to machine learning.  This course covers everything you need to know to start using Git and Github in the real-world today!</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="https://img-c.udemycdn.com/user/200_H/4466306_6fd8_3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">The Git & Github Bootcamp</h5>
-                            <p class="mb-2"><strong>By Colt Steele</strong></p>
-                            <a href="https://www.udemy.com/course/git-and-github-bootcamp/" target="_blank"><h5 class="text-secondary mb-1 pb-3">View Course</h5></a>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4 pt-3"></i>
-                            <h4 class="font-weight-light mb-4">Full Docker Tutorial | Complete Docker Course | Hands-on course with a lot of demos and explaining the concepts behind, so that you really understand it.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="https://yt3.ggpht.com/ytc/AKedOLQ-PgidQ0cYjiqG8YpXg_9DVvFrZnVduSC9vcx8pg=s88-c-k-c0x00ffffff-no-rj" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Docker Tutorial for Beginners</h5>
-                            <p class="mb-2"><strong>By TechWorld with Nana</strong></p>
-                            <a href="https://www.youtube.com/watch?v=3c-iBn73dDE" target="_blank"><h5 class="text-secondary mb-1 pb-3">View Course</h5></a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Completed courses End -->
- 
-
-
-
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" ><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" ><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" ><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social mr-2" ><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" >Privacy</a>
-                <span class="px-3">|</span>
-                <a class="text-white" >Terms</a>
-                <span class="px-3">|</span>
-                <a class="text-white" >FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" >Help</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" >Marian DUMITRU</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" >Marian DUMITRU</a>
-            </p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <!-- JavaScript Libraries -->
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
-
-
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    
-
-  
-
-    <!-- Template Javascript -->
-   
-    <script src="js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
-
 </html>
