@@ -13,9 +13,6 @@
   <meta property="og:title" content="Marian Dumitru | CV & Portfolio" />
   <meta property="og:description" content="Frontend Developer focused on React, TypeScript, and modern web interfaces." />
   <meta property="og:type" content="website" />
-  <!-- Optional: set these when you have a real domain & cover image -->
-  <!-- <meta property="og:url" content="https://your-domain.com/" /> -->
-  <!-- <meta property="og:image" content="https://your-domain.com/img/og-cover.jpg" /> -->
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Google Web Fonts -->
@@ -42,6 +39,7 @@
     <a href="index.html" class="navbar-brand ml-lg-3">
       <h1 class="m-0 display-5"><span class="text-primary">Curriculum</span>Vitae</h1>
     </a>
+
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,11 +47,14 @@
     <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
       <div class="navbar-nav m-auto py-0">
         <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#summary" class="nav-item nav-link">Summary</a>
+        <a href="#key-skills" class="nav-item nav-link">Key Skills</a>
         <a href="#about" class="nav-item nav-link">About</a>
         <a href="#skill" class="nav-item nav-link">Skills</a>
         <a href="#qualification" class="nav-item nav-link">Experience</a>
         <a href="#projects" class="nav-item nav-link">Projects</a>
         <a href="#courses" class="nav-item nav-link">Courses</a>
+        <a href="#extra" class="nav-item nav-link">Extra</a>
       </div>
 
       <a href="https://www.linkedin.com/in/marian-d-98130a92/"
@@ -77,7 +78,7 @@
           <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
           <div class="typed-text d-none">Frontend Developer, React & TypeScript, UI/UX-minded</div>
 
-          <p class="text-white-50 mt-3 mb-0" style="max-width: 520px;">
+          <p class="text-white-50 mt-3 mb-0" style="max-width: 540px;">
             I build responsive, accessible web interfaces and ship clean, maintainable front-end solutions.
             I enjoy turning complex requirements into simple user experiences.
           </p>
@@ -88,7 +89,7 @@
                class="btn btn-white mr-3">
               LinkedIn
             </a>
-            <!-- Optional: add GitHub / Portfolio when ready -->
+            <!-- Optional -->
             <!-- <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">GitHub</a> -->
           </div>
         </div>
@@ -105,6 +106,120 @@
   </div>
   <!-- Header End -->
 
+  <!-- CV Summary + Highlights Start -->
+  <div class="container-fluid py-5 bg-light" id="summary">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center mb-4">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Profile</h1>
+        <h1 class="position-absolute text-uppercase text-primary">Summary</h1>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h3 class="mb-3">Frontend Developer focused on React & TypeScript</h3>
+          <p class="mb-4">
+            I build modern, responsive and accessible web interfaces using React and TypeScript.
+            I enjoy turning complex requirements into clean user experiences and maintainable code.
+            I’m comfortable working end-to-end: UI structure, API integration, state management, debugging, and deployment.
+          </p>
+
+          <div class="d-flex flex-wrap">
+            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">React</span>
+            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">TypeScript</span>
+            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">JavaScript</span>
+            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">REST APIs</span>
+            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">Redux Toolkit</span>
+            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">React Router</span>
+            <span class="badge badge-pill badge-primary px-3 py-2 mr-2 mb-2">Git/GitHub</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5 mt-4 mt-lg-0">
+          <div class="bg-white rounded shadow-sm p-4">
+            <h4 class="mb-3">Highlights</h4>
+            <ul class="mb-0">
+              <li class="mb-2">Build clean UI components with strong attention to UX and responsiveness</li>
+              <li class="mb-2">Integrate APIs and handle loading/error states for reliable user flows</li>
+              <li class="mb-2">Work comfortably with routing, state management, and reusable architecture</li>
+              <li class="mb-2">Collaborate in Agile teams using clear communication and structured workflows</li>
+              <li class="mb-0">Deploy and maintain apps (Netlify / GitHub Pages) with practical release habits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CV Summary + Highlights End -->
+
+  <!-- Key Skills Grouped Start -->
+  <div class="container-fluid py-5" id="key-skills">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center mb-4">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+        <h1 class="position-absolute text-uppercase text-primary">Key Skills</h1>
+      </div>
+
+      <p class="text-muted text-center mb-5" style="max-width: 900px; margin: 0 auto;">
+        A quick overview of my core competencies, grouped for clarity — focused on real project work, not just buzzwords.
+      </p>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm p-4 h-100">
+            <h5 class="text-primary mb-3"><i class="fas fa-code mr-2"></i>Frontend</h5>
+            <ul class="mb-0">
+              <li>React (Hooks)</li>
+              <li>TypeScript</li>
+              <li>JavaScript (ES6+)</li>
+              <li>HTML5 / CSS3</li>
+              <li>Responsive UI</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm p-4 h-100">
+            <h5 class="text-primary mb-3"><i class="fas fa-project-diagram mr-2"></i>State & Data</h5>
+            <ul class="mb-0">
+              <li>Redux Toolkit</li>
+              <li>Context API</li>
+              <li>React Router</li>
+              <li>Axios / Fetch</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm p-4 h-100">
+            <h5 class="text-primary mb-3"><i class="fas fa-paint-brush mr-2"></i>UI & Quality</h5>
+            <ul class="mb-0">
+              <li>Bootstrap</li>
+              <li>UI consistency</li>
+              <li>Accessibility basics</li>
+              <li>Clean code habits</li>
+              <li>Debugging & refactoring</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm p-4 h-100">
+            <h5 class="text-primary mb-3"><i class="fas fa-tools mr-2"></i>Tools</h5>
+            <ul class="mb-0">
+              <li>Git / GitHub</li>
+              <li>Agile workflow</li>
+              <li>Basic Docker</li>
+              <li>Netlify / GitHub Pages</li>
+              <li>Chrome DevTools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Key Skills Grouped End -->
+
   <!-- About Start -->
   <div class="container-fluid py-5" id="about">
     <div class="container">
@@ -120,7 +235,6 @@
 
         <div class="col-lg-7">
           <h3 class="mb-3">Frontend Developer</h3>
-
           <p>
             I build modern web interfaces using React and TypeScript, with a strong focus on usability, accessibility,
             and clean code. I’m comfortable across the full delivery cycle: UI/UX thinking, implementation, debugging,
@@ -148,7 +262,8 @@
             <div class="col-sm-6 py-2"><h6>Portfolio: <span class="text-secondary">Add your website / GitHub</span></h6></div>
           </div>
 
-          <a href="#skill" class="btn btn-outline-primary">Explore Skills</a>
+          <a href="#projects" class="btn btn-outline-primary mr-2">View Projects</a>
+          <a href="#qualification" class="btn btn-outline-primary">Experience</a>
         </div>
       </div>
     </div>
@@ -164,8 +279,8 @@
       </div>
 
       <p class="text-muted text-center mb-5" style="max-width: 860px; margin: 0 auto;">
-        Core front-end skills used in real projects: responsive UI, state management, API integration, routing,
-        and deployment. I focus on maintainable code, clean architecture, and good UX.
+        Skills shown below reflect my practical experience building user interfaces, integrating APIs, managing state,
+        and delivering maintainable code for real projects.
       </p>
 
       <div class="row align-items-center">
@@ -233,7 +348,7 @@
           </div>
 
           <div class="skill mb-4">
-            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Agile / Team Collaboration</h6><h6 class="font-weight-bold">82%</h6></div>
+            <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Agile / Collaboration</h6><h6 class="font-weight-bold">82%</h6></div>
             <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div></div>
           </div>
         </div>
@@ -258,7 +373,7 @@
               <i class="far fa-dot-circle text-primary position-absolute" style="top:2px; left:-35px; font-size:22px;"></i>
               <h5 class="font-weight-bold mb-1">Bachelor’s Degree — Finance and Banking</h5>
               <p class="mb-2"><strong>Bucharest University of Economic Studies (ASE)</strong> | <small>2016 – 2020</small></p>
-              <p class="mb-0 text-muted">Focus on analytical thinking, financial systems, and structured problem solving.</p>
+              <p class="mb-0 text-muted">Analytical thinking, structured problem solving, and strong attention to detail.</p>
             </div>
 
             <div class="position-relative mb-4">
@@ -283,6 +398,7 @@
               </p>
               <ul class="mb-0">
                 <li>Built and maintained UI components and pages with modern front-end best practices</li>
+                <li>Integrated APIs and ensured reliable user flows with clean loading/error handling</li>
                 <li>Collaborated via Slack and tracked work in YouTrack using Agile workflows</li>
                 <li>Improved stability through structured debugging, refactoring, and clean code habits</li>
               </ul>
@@ -297,9 +413,11 @@
                 <li>Practiced Git workflows, code reviews, and component-based UI development</li>
               </ul>
             </div>
-
-            <!-- Optional: if you have another role, add it here -->
           </div>
+
+          <p class="text-muted mt-3 mb-0">
+            Note: Make sure the dates above match your real timeline (recruiters pay attention to consistency).
+          </p>
         </div>
       </div>
     </div>
@@ -313,6 +431,11 @@
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
         <h1 class="position-absolute text-uppercase text-primary">Selected Projects</h1>
       </div>
+
+      <p class="text-muted text-center mb-5" style="max-width: 900px; margin: 0 auto;">
+        A selection of projects that demonstrate UI development, API integration, state management, and clean architecture.
+        Each project includes a live demo.
+      </p>
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -644,6 +767,58 @@
   </div>
   <!-- Completed courses End -->
 
+  <!-- Languages + Volunteer/Community Start -->
+  <div class="container-fluid py-5 bg-light" id="extra">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center mb-4">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Extra</h1>
+        <h1 class="position-absolute text-uppercase text-primary">Languages & Community</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="bg-white rounded shadow-sm p-4 h-100">
+            <h4 class="mb-3">Languages</h4>
+            <ul class="mb-0">
+              <li><strong>Romanian:</strong> Native</li>
+              <li><strong>English:</strong> Professional working proficiency</li>
+            </ul>
+
+            <hr />
+
+            <h4 class="mb-3">What I’m looking for</h4>
+            <ul class="mb-0">
+              <li><strong>Role:</strong> Frontend Developer (React / TypeScript)</li>
+              <li><strong>Work mode:</strong> Remote / Hybrid / On-site</li>
+              <li><strong>Focus:</strong> Product UI, clean architecture, real user value</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="bg-white rounded shadow-sm p-4 h-100">
+            <h4 class="mb-3">Volunteer & Community</h4>
+            <p class="mb-3">
+              Alongside my technical work, I’m active in community initiatives focused on digital education and social impact.
+              I enjoy mentoring, organizing learning sessions, and building practical projects that help people grow.
+            </p>
+
+            <ul class="mb-0">
+              <li class="mb-2">Organize and support digital learning activities (workshops, hands-on sessions, mentoring)</li>
+              <li class="mb-2">Create practical resources and small projects to make technology easier to learn</li>
+              <li class="mb-2">Collaborate with teams and partners to deliver community-driven initiatives</li>
+              <li class="mb-0">Strong communication skills gained through coordination and volunteer work</li>
+            </ul>
+
+            <!-- Optional -->
+            <!-- <p class="mt-3 mb-0"><strong>More:</strong> <a href="https://your-initiative-site.com" target="_blank" rel="noopener noreferrer">View community work</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Languages + Volunteer/Community End -->
+
   <!-- Footer Start -->
   <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
     <div class="container text-center py-5">
@@ -651,9 +826,9 @@
         <!-- Update these with real links -->
         <a class="btn btn-light btn-social mr-2" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         <a class="btn btn-light btn-social mr-2" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/marian-d-98130a92/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+        <a class="btn btn-light btn-social mr-2"
+           href="https://www.linkedin.com/in/marian-d-98130a92/"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a class="btn btn-light btn-social mr-2" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
 
